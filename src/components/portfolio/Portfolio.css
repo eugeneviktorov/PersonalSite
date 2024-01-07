@@ -1,0 +1,195 @@
+.titleBlockHeader {
+    color: var(--globalColorBlue);
+    font-weight: 900;
+    display: inline-block;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .titleBlockHeader {
+        font-size: 28px;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width:320px) {
+    .titleBlockHeader {
+        font-size: 30px;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width:375px) {
+    .titleBlockHeader {
+        font-size: 32px;
+        margin-top: 3em;
+        width: 80%;
+    }
+}
+
+@media (min-width:1024px) {
+    .titleBlockHeader {
+        font-size: 32px;
+        margin-top: 4em;
+    }
+}
+
+@media (min-width:1920px) {
+    .titleBlockHeader {
+        font-size: 32px;
+        margin-top: 5em;
+    }
+}
+
+/* БЛОК - Портфолио */
+.portfolioPhoto {
+    background-color: var(--globalColorWhite);
+    box-shadow: var(--globalBoxShadow);
+    border-radius: 1.5em;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@media (min-width:280px) {
+    .portfolioPhoto {
+        margin-top: 2em;
+        padding: 0.5em;
+    }
+}
+
+@media (min-width:425px) {
+    .portfolioPhoto {
+        padding: 1em;
+    }
+}
+
+@media (min-width:768px) {
+    .portfolioPhoto {
+        width: 40%;
+        margin-top: 2.4em;
+        margin-right: 2.4em;
+    }
+}
+
+@media (min-width:1440px) {
+    .portfolioPhoto {
+        margin-top: 3.2em;
+        margin-right: 3.2em;
+    }
+}
+
+.hideImage {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.portfolioPhotoSettings {
+    width: 100%;
+    border-radius: 1em;
+    display: block;
+    transition: 0.5s;
+}
+
+.portfolioPhotoSettings:hover {
+    scale: 1.1;
+}
+
+.portfolioTitleName {
+    font-weight: 700;
+    color: var(--globalColorBlue);
+    margin-top: 0.3em;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .portfolioTitleName {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:375px) {
+    .portfolioTitleName {
+        font-size: 24px;
+    }
+}
+
+.portfolioTextAbout {
+    font-weight: 700;
+    color: var(--globalColorDarkBlue);
+    margin-top: 0.3em;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .portfolioTextAbout {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:375px) {
+    .portfolioTextAbout {
+        font-size: 18px;
+    }
+}
+
+.buttonCases {
+    background-color: var(--globalColorBlue);
+    color: var(--globalColorWhite);
+    display: inline-block;
+    border-radius: 1em;
+    transition: 0.5s;
+    margin-top: 1em;
+}
+
+@media (min-width:280px) {
+    .buttonCases {
+        padding: 0.8em 1.3em 0.8em 1.3em;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:320px) {
+    .buttonCases {
+        padding: 0.8em 1.3em 0.8em 1.3em;
+        font-size: 18px;
+    }
+}
+
+@media (min-width:425px) {
+    .buttonCases {
+        padding: 0.9em 1.3em 0.9em 1.3em;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:2560px) {
+    .buttonCases {
+        font-size: 26px;
+    }
+}
+
+.buttonCases:active {
+    background-color: var(--globalColorDarkBlue);
+    transition: 0s;
+}

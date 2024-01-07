@@ -1,0 +1,256 @@
+/* Глобальные цвета */
+:root {
+    --globalColorWhiteBlue: #CDE4FF;
+}
+/* Основа страницы */
+html {
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+body {
+    overflow: overlay;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: var(--tg-theme-secondary-bg-color);
+}
+br {
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+a {
+    color: var(--tg-theme-link-color) 
+}
+a:hover {
+    text-decoration: none;
+}
+/* Страница */
+.documents {
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+@media (min-width:768px) {
+    .documents {
+        width: 80%;
+   }
+}
+@media (min-width:1024px) {
+    .documents {
+        width: 65%;
+   }
+}
+@media (min-width:1440px) {
+    .documents {
+        width: 60%;
+   }
+}
+@media (min-width:1920px) {
+    .documents {
+        width: 55%;
+   }
+}
+@media (min-width:2560px) {
+    .documents {
+        width: 50%;
+   }
+}
+/* Наименование проекта */
+.nameProject {
+    color: var(--globalColorWhiteBlue);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: 900;
+}
+@media (min-width:280px) {
+    .nameProject {
+        font-size: 28px;
+   }
+}
+@media (min-width:320px) {
+    .nameProject {
+        font-size: 32px;
+   }
+}
+@media (min-width:425px) {
+    .nameProject {
+        font-size: 36px;
+   }
+}
+@media (min-width:768px) {
+    .nameProject {
+        font-size: 40px;
+   }
+}
+@media (min-width:1024px) {
+    .nameProject {
+        font-size: 44px;
+   }
+}
+@media (min-width:1440px) {
+    .nameProject {
+        font-size: 48px;
+   }
+}
+/* Наименование страницы */
+.title {
+    color: var(--tg-theme-text-color);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2em;
+    -webkit-user-select: text;
+   /* Safari */
+    -moz-user-select: text;
+   /* Firefox */
+    -ms-user-select: text;
+   /* IE10+/Edge */
+    user-select: text;
+   /* Standard */
+}
+@media (min-width:280px) {
+    .title {
+        font-size: 20px;
+   }
+}
+@media (min-width:320px) {
+    .title {
+        font-size: 22px;
+   }
+}
+@media (min-width:375px) {
+    .title {
+        font-size: 24px;
+   }
+}
+@media (min-width:768px) {
+    .title {
+        font-size: 26px;
+   }
+}
+@media (min-width:2560px) {
+    .title {
+        font-size: 32px;
+   }
+}
+/* Блок вопроса */
+.faqAndRulesQuestion {
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+    font-weight: 700;
+    margin-top: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 1em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: max-height 0.5s ease;
+    max-height: auto;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: text;
+   /* Safari */
+    -moz-user-select: text;
+   /* Firefox */
+    -ms-user-select: text;
+   /* IE10+/Edge */
+    user-select: text;
+   /* Standard */
+}
+@media (min-width:280px) {
+    .faqAndRulesQuestion {
+        font-size: 16px;
+   }
+}
+@media (min-width:320px) {
+    .faqAndRulesQuestion {
+        font-size: 18px;
+   }
+}
+@media (min-width:375px) {
+    .faqAndRulesQuestion {
+        font-size: 20px;
+   }
+}
+@media (min-width:768px) {
+    .faqAndRulesQuestion {
+        font-size: 22px;
+   }
+}
+@media (min-width:2560px) {
+    .faqAndRulesQuestion {
+        font-size: 28px;
+   }
+}
+.faqAndRulesQuestion.active {
+    border-radius: 1em 1em 0em 0em;
+}
+/* Блок ответа */
+.answer {
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em 1em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease;
+    -webkit-user-select: text;
+   /* Safari */
+    -moz-user-select: text;
+   /* Firefox */
+    -ms-user-select: text;
+   /* IE10+/Edge */
+    user-select: text;
+   /* Standard */
+}
+@media (min-width:280px) {
+    .answer {
+        font-size: 14px;
+   }
+}
+@media (min-width:320px) {
+    .answer {
+        font-size: 16px;
+   }
+}
+@media (min-width:375px) {
+    .answer {
+        font-size: 18px;
+   }
+}
+@media (min-width:768px) {
+    .answer {
+        font-size: 20px;
+   }
+}
+@media (min-width:2560px) {
+    .answer {
+        font-size: 26px;
+   }
+}
+.answer.active {
+    display: block;
+    border-radius: 0em 0em 1em 1em;
+    max-height: auto;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 2em;
+}

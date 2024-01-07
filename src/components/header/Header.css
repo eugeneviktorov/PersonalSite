@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--globalColorWhite);
+    box-shadow: var(--globalBoxShadow);
+    border-radius: 0 0 2em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--globalColorDarkBlue);
+    font-weight: bold;
+    border-radius: 10em;
+    transition: 0.7s;
+}
+
+@media (min-width:280px) {
+    ul li a {
+        padding: 0.2em;
+        font-size: 14px;
+        margin-right: 0.1em;
+    }
+}
+
+@media (min-width:320px) {
+    ul li a {
+        padding: 0.5em;
+        font-size: 14px;
+        margin-right: 0.7em;
+    }
+}
+
+@media (min-width:425px) {
+    ul li a {
+        font-size: 16px;
+        margin-right: 0.7em;
+    }
+}
+
+@media (min-width:768px) {
+    ul li a {
+        font-size: 18px;
+        margin-right: 2em;
+    }
+}
+
+ul li a:hover {
+    background: var(--globalColorBlue);
+    color: var(--globalColorWhite);
+    border-radius: 10em;
+}
+
+ul li a:active {
+    background: var(--globalColorDarkBlue);
+    transition: 0s;
+}
+
+.logotype {
+    display: inline-block;
+}
+
+@media (min-width:280px) {
+    .logotype {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        margin-left: 0.7em;
+    }
+}
+
+@media (min-width:425px) {
+    .logotype {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        margin-left: 0.6em;
+    }
+}
+
+@media (min-width:768px) {
+    .logotype {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 2em;
+    }
+}
+
+.logo {
+    pointer-events: none;
+}
+
+@media (min-width:280px) {
+    .logo {
+        width: 90px;
+    }
+}
+
+@media (min-width:320px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (min-width:375px) {
+    .logo {
+        width: 120px;
+    }
+}
+
+@media (min-width:768px) {
+    .logo {
+        width: 140px;
+    }
+}
+
+@media (min-width:1024px) {
+    .logo {
+        width: 150px;
+    }
+}

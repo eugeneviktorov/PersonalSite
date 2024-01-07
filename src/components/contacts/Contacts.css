@@ -1,0 +1,372 @@
+@media (min-width:425px) {
+    .formPosition {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .formPosition {
+        text-align: left;
+    }
+}
+
+@media (min-width:280px) {
+    .backgroundForm {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+@media (min-width:425px) {
+    .backgroundForm {
+        width: 90%;
+        display: inline-block;
+    }
+}
+
+@media (min-width:768px) {
+    .backgroundForm {
+        width: 45%;
+        margin-top: 1.5em;
+    }
+}
+
+@media (min-width:1440px) {
+    .backgroundForm {
+        margin-top: 3.1em;
+    }
+}
+
+::placeholder {
+    color: var(--globalColorGray);
+    font-weight: 400;
+    font-family: Nunito-Bold;
+}
+
+
+
+.inputFormName {
+    color: var(--globalColorDarkBlue);
+    background-color: var(--globalColorWhite);
+    box-shadow: var(--globalBoxShadow);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 1em;
+    /* font-weight: 700; */
+    font-family: Nunito-Bold;
+}
+
+@media (min-width:280px) {
+    .inputFormName {
+        font-size: 16px;
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+.inputFormEmail,
+.inputFormPhone {
+    color: var(--globalColorDarkBlue);
+    background-color: var(--globalColorWhite);
+    box-shadow: var(--globalBoxShadow);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-top: 1em;
+    border-radius: 1em;
+    /* font-weight: 700; */
+    font-family: Nunito-Bold;
+}
+
+@media (min-width:280px) {
+
+    .inputFormEmail,
+    .inputFormPhone {
+        font-size: 16px;
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+.isNotAlert {
+    padding: 10px 10px 10px 20px;
+    background-color: var(--globalColorDarkWhite);
+    color: var(--globalColorDarkGray);
+    margin-top: 1.5em;
+    display: none;
+    border-radius: 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .isNotAlert {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:375px) {
+    .isNotAlert {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+.isNotAlert.visible {
+    display: block;
+}
+
+@media (min-width:280px) {
+    .isNotValid {
+        border: 2px solid var(--globalColorBlue);
+    }
+}
+
+@media (min-width:1440px) {
+    .isNotValid {
+        border: 3px solid var(--globalColorBlue);
+    }
+}
+
+.closebtn {
+    margin-left: 0px;
+    color: var(--globalColorDarkGray);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (min-width:2560px) {
+    .closebtn {
+        font-size: 34px;
+    }
+}
+
+.closebtn:hover {
+    color: var(--globalColorBlue);
+}
+
+.button {
+    color: var(--globalColorWhite);
+    background-color: var(--globalColorBlue);
+    box-shadow: var(--globalBoxShadow);
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 1em;
+    font-family: Nunito-Bold;
+}
+
+@media (min-width:280px) {
+    .button {
+        font-size: 16px;
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+.button:active {
+    background-color: var(--globalColorDarkBlue);
+    transition: 0s;
+}
+
+.button.waiting {
+    background-color: var(--globalColorDarkGray);
+    cursor: wait;
+}
+
+.button.not_allowed {
+    background-color: var(--globalColorDarkGray);
+    cursor: not-allowed;
+}
+
+.confidentiality {
+    color: var(--globalColorDarkBlue);
+    margin-top: 1em;
+    font-weight: 600;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .confidentiality {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Контактные данные */
+@media (min-width:280px) {
+    .contacts {
+        margin-top: 2em;
+        vertical-align: 0em;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .contacts {
+        margin-top: 1.5em;
+        margin-left: 3em;
+        vertical-align: top;
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+@media (min-width:1440px) {
+    .contacts {
+        margin-top: 3.1em;
+    }
+}
+
+.name {
+    color: var(--globalColorDarkBlue);
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .name {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:320px) {
+    .name {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:375px) {
+    .name {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:425px) {
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1440px) {
+    .name {
+        font-size: 28px;
+    }
+}
+
+.linkContacts {
+    color: var(--globalColorBlue);
+    margin-top: 0.5em;
+    -webkit-user-select: text;
+    /* Safari */
+    -moz-user-select: text;
+    /* Firefox */
+    -ms-user-select: text;
+    /* IE10+/Edge */
+    user-select: text;
+    /* Standard */
+}
+
+@media (min-width:280px) {
+    .linkContacts {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:320px) {
+    .linkContacts {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:375px) {
+    .linkContacts {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:425px) {
+    .linkContacts {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1440px) {
+    .linkContacts {
+        font-size: 28px;
+    }
+}
+
+.icoLink {
+    text-decoration: none;
+}
+
+.icoPosition {
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.ico {
+    padding: 0.5em;
+    transition: 0.2s;
+    box-shadow: var(--globalBoxShadow);
+    background-color: var(--globalColorWhite);
+}
+
+@media (min-width:280px) {
+    .ico {
+        width: 40px;
+        border-radius: 0.8em;
+    }
+}
+
+@media (min-width:375px) {
+    .ico {
+        width: 45px;
+        border-radius: 1em;
+    }
+}
+
+@media (min-width:425px) {
+    .ico {
+        width: 50px;
+    }
+}
+
+.ico:hover {
+    scale: 1.1;
+}

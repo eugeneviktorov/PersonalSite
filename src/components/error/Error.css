@@ -1,0 +1,123 @@
+/* Главный текст */
+.pageNotFound {
+    text-align: center;
+    margin-top: 1em;
+    color: var(--globalColorDarkBlue);
+}
+
+@media (min-width:280px) {
+    .pageNotFound {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:375px) {
+    .pageNotFound {
+        font-size: 38px;
+    }
+}
+
+@media (min-width:2560px) {
+    .pageNotFound {
+        font-size: 58px;
+    }
+}
+
+/* Номер ошибки */
+.errorNumber {
+    text-align: center;
+    font-size: 108px;
+    color: var(--globalColorGray);
+    font-weight: 900;
+    margin-top: 0.2em;
+}
+
+@media (min-width:2560px) {
+    .errorNumber {
+        font-size: 152px;
+    }
+}
+
+/* Логотип сайта */
+.photo {
+    text-align: center;
+    pointer-events: none;
+    margin-top: 1.5em;
+}
+
+@media (min-width:280px) {
+    .photo_settings {
+        width: 250px;
+    }
+}
+
+@media (min-width:375px) {
+    .photo_settings {
+        width: 350px;
+    }
+}
+
+@media (min-width:425px) {
+    .photo_settings {
+        width: 400px;
+    }
+}
+
+@media (min-width:768px) {
+    .photo_settings {
+        width: 500px;
+    }
+}
+
+@media (min-width:2560px) {
+    .photo_settings {
+        width: 700px;
+    }
+}
+
+/* Кнопка главной страницы */
+.buttonPosition {
+    text-align: center;
+}
+
+.buttonLink {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.buttonText {
+    background-color: var(--globalColorBlue);
+    color: var(--globalColorWhite);
+    padding: 0.8em 1.5em 0.8em 1.5em;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+@media (min-width:280px) {
+    .buttonText {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:320px) {
+    .buttonText {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:425px) {
+    .buttonText {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:2560px) {
+    .buttonText {
+        font-size: 28px;
+    }
+}
+
+.buttonText:active {
+    background-color: var(--globalColorDarkBlue);
+    transition: 0s;
+}
