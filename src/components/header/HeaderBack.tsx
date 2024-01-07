@@ -17,7 +17,9 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a onClick={() => navigate(-1)}>Назад</a>
+              <div className="cursor">
+                <a onClick={() => navigate(-1)}>Назад</a>
+              </div>
             </li>
           </ul>
         </nav>

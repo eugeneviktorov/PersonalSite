@@ -1,0 +1,26 @@
+[
+  {
+    "title": "ИТ Адаптация",
+    "link": "https://it-adapt.ru",
+    "image": "IT-Adaptation.png",
+    "description": "Лендинг ИТ компании"
+  },
+  {
+    "title": "Music service",
+    "link": "https://www.figma.com/community/file/1113393200185818580/Music-service",
+    "image": "Music-service.png",
+    "description": "Макет мобильного приложения"
+  },
+  {
+    "title": "ShortStory bot",
+    "link": "https://t.me/ShortStoryyBot",
+    "image": "ShortStory.png",
+    "description": "Telegram bot коротких историй"
+  },
+  {
+    "title": "DirectDost (концепт)",
+    "link": "https://github.com/eugeneviktorov/DirectDost",
+    "image": "DirectDost.png",
+    "description": "Приложение для университета"
+  }
+]

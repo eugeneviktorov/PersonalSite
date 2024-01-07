@@ -130,3 +130,7 @@ ul li a:active {
         width: 150px;
     }
 }
+
+.cursor {
+    cursor: pointer;
+}
