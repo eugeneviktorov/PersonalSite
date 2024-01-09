@@ -133,4 +133,5 @@ ul li a:active {
 
 .cursor {
     cursor: pointer;
+    width: 0%;
 }

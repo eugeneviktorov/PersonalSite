@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Portfolio.css";
 import "../about/About.css";
 import PortfolioItem from "./PortfolioData";
+import TitleBlockHeader from "./TitleBlockHeader";
 
 function App() {
   const portfolioData = require("../../assets/dataJson/Portfolio.json");
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <div id="portfolio"></div>
       <div className="blockHeader">
-        <div className="titleBlockHeader">Портфолио</div>
+        <TitleBlockHeader text={"Портфолио"} />
         {/* Портфолио */}
         {portfolioData.map((item, index) => (
           <PortfolioItem key={index} item={item} />
