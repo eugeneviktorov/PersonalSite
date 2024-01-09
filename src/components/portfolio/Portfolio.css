@@ -105,6 +105,9 @@
     font-weight: 700;
     color: var(--globalColorBlue);
     margin-top: 0.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;
@@ -131,6 +134,9 @@
     font-weight: 700;
     color: var(--globalColorDarkBlue);
     margin-top: 0.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;

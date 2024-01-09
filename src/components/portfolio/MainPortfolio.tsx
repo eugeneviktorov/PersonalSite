@@ -4,7 +4,7 @@ import "../about/About.css";
 import PortfolioItem from "./PortfolioData";
 
 function App() {
-  const portfolioData = require("../../assets/dataJson/MainPortfolio.json");
+  const portfolioData = require("../../assets/dataJson/Portfolio.json");
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
