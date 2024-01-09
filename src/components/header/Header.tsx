@@ -3,6 +3,14 @@ import Logotype from "../../assets/icons/Logo.svg";
 import "./Header.css";
 
 function App() {
+  const scrollToNotLink = (event: React.MouseEvent, targetId: string) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="App">
       <header>
@@ -14,10 +22,20 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a href="#portfolio">работы</a>
+              <a
+                href="#portfolio"
+                onClick={(e) => scrollToNotLink(e, "portfolio")}
+              >
+                работы
+              </a>
             </li>
             <li>
-              <a href="#feedback">контакты</a>
+              <a
+                href="#feedback"
+                onClick={(e) => scrollToNotLink(e, "feedback")}
+              >
+                контакты
+              </a>
             </li>
           </ul>
         </nav>
