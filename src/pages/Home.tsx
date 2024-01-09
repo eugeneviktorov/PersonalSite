@@ -8,6 +8,7 @@ import Contacts from "../components/contacts/Contacts";
 import Footer from "../components/footer/Footer";
 
 function App() {
+  document.title = "Викторов";
   return (
     <div className="App">
       <Preload />
