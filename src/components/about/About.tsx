@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./About.css";
+import WorkTitle from "./WorkTitle";
 
 function App() {
   return (
@@ -14,22 +15,8 @@ function App() {
           Создание простых и понятных продуктов, которые помогут пользователям
           быстро и эффективно решать свои задачи
         </div>
-        <div className="workTitle">
-          <ul>
-            <li>Разработка</li>
-          </ul>
-          <ul>
-            <li>UI - Дизайн</li>
-          </ul>
-        </div>
-        <div className="workTitle">
-          <ul>
-            <li>Поддержка</li>
-          </ul>
-          <ul>
-            <li>Тестирование</li>
-          </ul>
-        </div>
+        <WorkTitle TitleOne={"Разработка"} TitleTwo={"UI - Дизайн"} />
+        <WorkTitle TitleOne={"Поддержка"} TitleTwo={"Тестирование"} />
       </div>
     </div>
   );
