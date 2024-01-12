@@ -1,4 +1,4 @@
-/* Глобальные шрифты */
+/* Глобальный шрифт */
 @font-face {
   font-family: "Nunito-Bold";
   src: url("./assets/fonts/Nunito-Bold.ttf") format("truetype");
@@ -29,6 +29,7 @@ html {
   /* Standard */
 }
 
+/* Настройка страницы */
 body {
   background: var(--globalBackground);
   overflow: overlay;
@@ -36,6 +37,7 @@ body {
   font-family: Nunito-Bold;
 }
 
+/* Отступ */
 br {
   -webkit-user-select: none;
   /* Safari */
@@ -47,19 +49,23 @@ br {
   /* Standard */
 }
 
+/* Тег */
 ul {
   padding-left: 1.2em;
 }
 
+/* Размер скроллбара */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.7em;
 }
 
+/* Стиль скроллбара */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px 0px 0px 20px;
   background: var(--globalColorGray);
 }
 
+/* Ссылка */
 a {
   color: var(--globalColorBlue);
 }

@@ -1,7 +1,4 @@
-.wrapper {
-    opacity: 0;
-}
-
+/* Положение загрузочного экрана */
 .preload {
     display: block;
     width: 100%;
@@ -15,10 +12,12 @@
     pointer-events: none;
 }
 
+/* Скрытие загрузочного экрана */
 .preload.invisible {
     opacity: 0;
 }
 
+/* Положение логотипа */
 .preLogo {
     margin: 0;
     position: absolute;

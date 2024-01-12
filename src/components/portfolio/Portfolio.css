@@ -1,3 +1,4 @@
+/* Заголовок блока */
 .titleBlockHeader {
     color: var(--globalColorBlue);
     font-weight: 900;
@@ -48,7 +49,7 @@
     }
 }
 
-/* БЛОК - Портфолио */
+/* Фото проекта */
 .portfolioPhoto {
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
@@ -85,11 +86,13 @@
     }
 }
 
+/* Приближение фото внутри рамки */
 .hideImage {
     border-radius: 1em;
     overflow: hidden;
 }
 
+/* Настройка приближения фото */
 .portfolioPhotoSettings {
     width: 100%;
     border-radius: 1em;
@@ -101,6 +104,7 @@
     scale: 1.1;
 }
 
+/* Название проекта */
 .portfolioTitleName {
     font-weight: 700;
     color: var(--globalColorBlue);
@@ -130,6 +134,7 @@
     }
 }
 
+/* Описание проекта */
 .portfolioTextAbout {
     font-weight: 700;
     color: var(--globalColorDarkBlue);
@@ -159,6 +164,7 @@
     }
 }
 
+/* Кнопка с работами */
 .buttonCases {
     background-color: var(--globalColorBlue);
     color: var(--globalColorWhite);

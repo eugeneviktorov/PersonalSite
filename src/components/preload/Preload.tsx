@@ -21,7 +21,6 @@ function App() {
       <div className="preload">
         <img src={Logotype} className="preLogo" width="300" alt="preload" />
       </div>
-      <div className="wrapper"></div>
     </div>
   );
 }

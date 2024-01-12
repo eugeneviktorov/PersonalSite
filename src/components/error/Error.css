@@ -1,8 +1,8 @@
 /* Главный текст */
 .pageNotFound {
-    text-align: center;
-    margin-top: 1em;
     color: var(--globalColorDarkBlue);
+    margin-top: 1em;
+    text-align: center;
 }
 
 @media (min-width:280px) {
@@ -25,11 +25,11 @@
 
 /* Номер ошибки */
 .errorNumber {
+    color: var(--globalColorGray);
+    margin-top: 0.2em;
     text-align: center;
     font-size: 108px;
-    color: var(--globalColorGray);
     font-weight: 900;
-    margin-top: 0.2em;
 }
 
 @media (min-width:2560px) {
@@ -39,38 +39,37 @@
 }
 
 /* Логотип сайта */
-.photo {
+.logoPosition {
     text-align: center;
-    pointer-events: none;
     margin-top: 1.5em;
 }
 
 @media (min-width:280px) {
-    .photo_settings {
+    .logoSize {
         width: 250px;
     }
 }
 
 @media (min-width:375px) {
-    .photo_settings {
+    .logoSize {
         width: 350px;
     }
 }
 
 @media (min-width:425px) {
-    .photo_settings {
+    .logoSize {
         width: 400px;
     }
 }
 
 @media (min-width:768px) {
-    .photo_settings {
+    .logoSize {
         width: 500px;
     }
 }
 
 @media (min-width:2560px) {
-    .photo_settings {
+    .logoSize {
         width: 700px;
     }
 }

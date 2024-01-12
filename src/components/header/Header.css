@@ -1,15 +1,17 @@
+/* Шапка страницы */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
     border-radius: 0 0 2em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     z-index: 99;
 }
 
+/* Теги */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -20,9 +22,9 @@ nav ul {
 }
 
 ul li a {
+    color: var(--globalColorDarkBlue);
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--globalColorDarkBlue);
     font-weight: bold;
     border-radius: 10em;
     transition: 0.7s;
@@ -69,6 +71,7 @@ ul li a:active {
     transition: 0s;
 }
 
+/* Логотип */
 .logotype {
     display: inline-block;
 }
@@ -131,6 +134,7 @@ ul li a:active {
     }
 }
 
+/* Курсор для кнопки */
 .cursor {
     cursor: pointer;
     width: 0%;

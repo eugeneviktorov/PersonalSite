@@ -1,3 +1,4 @@
+/* Форма адаптив контактной формы */
 @media (min-width:425px) {
     .formPosition {
         text-align: center;
@@ -10,6 +11,7 @@
     }
 }
 
+/* Форма обратной связи */
 @media (min-width:280px) {
     .backgroundForm {
         width: 100%;
@@ -37,35 +39,15 @@
     }
 }
 
+/* Заполнитель полей ввода */
 ::placeholder {
     color: var(--globalColorGray);
     font-weight: 400;
     font-family: Nunito-Bold;
 }
 
-
-
-.inputFormName {
-    color: var(--globalColorDarkBlue);
-    background-color: var(--globalColorWhite);
-    box-shadow: var(--globalBoxShadow);
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border-radius: 1em;
-    /* font-weight: 700; */
-    font-family: Nunito-Bold;
-}
-
-@media (min-width:280px) {
-    .inputFormName {
-        font-size: 16px;
-        padding: 1em;
-        width: 100%;
-    }
-}
-
+/* Форма ввода имени */
+.inputFormName,
 .inputFormEmail,
 .inputFormPhone {
     color: var(--globalColorDarkBlue);
@@ -75,14 +57,13 @@
     outline: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    margin-top: 1em;
+    margin-bottom: 1em;
     border-radius: 1em;
-    /* font-weight: 700; */
     font-family: Nunito-Bold;
 }
 
 @media (min-width:280px) {
-
+    .inputFormName,
     .inputFormEmail,
     .inputFormPhone {
         font-size: 16px;
@@ -91,11 +72,12 @@
     }
 }
 
+/* Показ уведомления */
 .isNotAlert {
-    padding: 10px 10px 10px 20px;
     background-color: var(--globalColorDarkWhite);
     color: var(--globalColorDarkGray);
-    margin-top: 1.5em;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 1em;
     display: none;
     border-radius: 1em;
     box-sizing: border-box;
@@ -124,6 +106,7 @@
     }
 }
 
+/* Скрытие уведомления */
 .isNotAlert.visible {
     display: block;
 }
@@ -140,12 +123,13 @@
     }
 }
 
+/* Кнопка закрытия уведомления */
 .closebtn {
-    margin-left: 0px;
     color: var(--globalColorDarkGray);
+    margin-left: 0px;
+    font-size: 24px;
     font-weight: bold;
     float: right;
-    font-size: 22px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -161,13 +145,13 @@
     color: var(--globalColorBlue);
 }
 
+/* Кнопка отправки данных */
 .button {
-    color: var(--globalColorWhite);
     background-color: var(--globalColorBlue);
+    color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
     border: none;
     outline: none;
-    margin-top: 1em;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     transition: 0.3s;
@@ -199,6 +183,7 @@
     cursor: not-allowed;
 }
 
+/* Текст документации */
 .confidentiality {
     color: var(--globalColorDarkBlue);
     margin-top: 1em;
@@ -245,6 +230,7 @@
     }
 }
 
+/* Имя */
 .name {
     color: var(--globalColorDarkBlue);
     -webkit-user-select: text;
@@ -287,6 +273,7 @@
     }
 }
 
+/* Контактные ссылки */
 .linkContacts {
     color: var(--globalColorBlue);
     margin-top: 0.5em;
@@ -330,6 +317,7 @@
     }
 }
 
+/* Социальные сети */
 .icoLink {
     text-decoration: none;
 }

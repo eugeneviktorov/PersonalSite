@@ -11,8 +11,8 @@ function App() {
         не найдена
       </div>
       <div className="errorNumber">404</div>
-      <div className="photo">
-        <img src={Logo} className="photo_settings" />
+      <div className="logoPosition">
+        <img src={Logo} className="logoSize" />
       </div>
       <div className="buttonPosition">
         <a href="https://viktorovvv.ru">
