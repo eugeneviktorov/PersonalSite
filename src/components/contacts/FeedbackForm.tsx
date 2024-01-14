@@ -35,12 +35,7 @@ const App = ({ serviceId, templateId, userId }) => {
       setButtonDisabled(true);
 
       try {
-        const response = await emailjs.sendForm(
-          serviceId,
-          templateId,
-          e.target,
-          userId
-        );
+        await emailjs.sendForm(serviceId, templateId, e.target, userId);
         setButtonText("Заявка принята!");
         setButtonDisabled(true);
         setFromName("");
@@ -62,8 +57,17 @@ const App = ({ serviceId, templateId, userId }) => {
   const validateEmail = (mail) =>
     /^[a-zA-Zа-яА-Я0-9._-]+@[a-zA-Zа-яА-Я0-9.-]+\.[a-zA-Zа-яА-Я]{2,6}$|^[a-zA-Zа-яА-Я0-9._-]+@[a-zA-Zа-яА-Я0-9.-]+$/.test(
       mail
-    );
+    ) && mail.length <= 70;
   const validateNumber = (tel) => /^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(tel);
+
+  // Перемещение курсора в начало ввода номера телефона
+  const handleMouseDown = (e) => {
+    e.preventDefault();
+    // Активация поля ввода
+    if (!document.activeElement.isSameNode(e.target)) {
+      e.target.focus();
+    }
+  };
 
   return (
     <div className="formPosition">
@@ -99,6 +103,7 @@ const App = ({ serviceId, templateId, userId }) => {
           id="tel_number"
           value={telNumber}
           onChange={(e) => setTelNumber(e.target.value)}
+          onMouseDown={handleMouseDown}
         />
         {/* Уведомление некорректного ввода */}
         <div
