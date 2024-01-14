@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <a href="https://viktorovvv.ru">
+        <a href="/">
           <div className="logotype">
             <img src={Logotype} className="logo" />
           </div>

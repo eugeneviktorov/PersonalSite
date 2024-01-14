@@ -68,6 +68,7 @@ ul li a:hover {
 
 ul li a:active {
     background: var(--globalColorDarkBlue);
+    color: var(--globalColorWhite);
     transition: 0s;
 }
 
@@ -134,8 +135,8 @@ ul li a:active {
     }
 }
 
-/* Курсор для кнопки */
-.cursor {
+/* Кнопка назад */
+.buttonBack {
     cursor: pointer;
     width: 0%;
 }

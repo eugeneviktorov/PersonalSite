@@ -1,8 +1,9 @@
 /* Заголовок блока */
 .titleBlockHeader {
     color: var(--globalColorBlue);
-    font-weight: 900;
+    margin-bottom: 1em;
     display: inline-block;
+    font-weight: 900;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;
@@ -54,13 +55,13 @@
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
     border-radius: 1.5em;
-    display: inline-block;
     overflow: hidden;
 }
 
 @media (min-width:280px) {
     .portfolioPhoto {
-        margin-top: 2em;
+        display: block;
+        margin-bottom: 2em;
         padding: 0.5em;
     }
 }
@@ -74,17 +75,18 @@
 @media (min-width:768px) {
     .portfolioPhoto {
         width: 40%;
-        margin-top: 2.4em;
+        display: inline-block;
         margin-right: 2.4em;
+        margin-bottom: 2.4em;
     }
 }
 
 @media (min-width:1440px) {
     .portfolioPhoto {
-        margin-top: 3.2em;
         margin-right: 3.2em;
     }
 }
+
 
 /* Приближение фото внутри рамки */
 .hideImage {
@@ -171,7 +173,7 @@
     display: inline-block;
     border-radius: 1em;
     transition: 0.5s;
-    margin-top: 1em;
+    margin-top: -1em;
 }
 
 @media (min-width:280px) {

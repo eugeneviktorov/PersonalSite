@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <a href="https://viktorovvv.ru">
+        <a href="/">
           <div className="logotype">
             <img src={Logotype} className="logo" />
           </div>
@@ -17,9 +17,9 @@ function App() {
         <nav>
           <ul>
             <li>
-              <div className="cursor">
-                <a onClick={() => navigate(-1)}>Назад</a>
-              </div>
+              <a className="buttonBack" onClick={() => navigate(-1)}>
+                Назад
+              </a>
             </li>
           </ul>
         </nav>

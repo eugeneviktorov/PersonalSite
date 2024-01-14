@@ -108,7 +108,7 @@ const App = ({ serviceId, templateId, userId }) => {
           <span className="closebtn" onClick={() => setAlertVisible(false)}>
             &times;
           </span>
-          Некорректный ввод Имени, Почты или Номера телефона.
+          Некорректный ввод имени, эл.почты или номера телефона.
         </div>
         {/* Кнопка отправки */}
         <button

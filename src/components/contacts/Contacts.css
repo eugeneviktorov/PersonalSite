@@ -15,7 +15,6 @@
 @media (min-width:280px) {
     .backgroundForm {
         width: 100%;
-        margin-top: 1em;
     }
 }
 
@@ -29,13 +28,6 @@
 @media (min-width:768px) {
     .backgroundForm {
         width: 45%;
-        margin-top: 1.5em;
-    }
-}
-
-@media (min-width:1440px) {
-    .backgroundForm {
-        margin-top: 3.1em;
     }
 }
 
@@ -112,12 +104,6 @@
 }
 
 @media (min-width:280px) {
-    .isNotValid {
-        border: 2px solid var(--globalColorBlue);
-    }
-}
-
-@media (min-width:1440px) {
     .isNotValid {
         border: 3px solid var(--globalColorBlue);
     }
@@ -208,7 +194,6 @@
 /* Контактные данные */
 @media (min-width:280px) {
     .contacts {
-        margin-top: 2em;
         vertical-align: 0em;
         text-align: center;
     }
@@ -216,17 +201,10 @@
 
 @media (min-width:768px) {
     .contacts {
-        margin-top: 1.5em;
         margin-left: 3em;
         vertical-align: top;
         text-align: left;
         display: inline-block;
-    }
-}
-
-@media (min-width:1440px) {
-    .contacts {
-        margin-top: 3.1em;
     }
 }
 
