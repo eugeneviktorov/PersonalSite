@@ -23,7 +23,7 @@ function App() {
           <ul>
             <li>
               <a
-                href="#portfolio"
+                className="buttonCursor"
                 onClick={(e) => scrollToNotLink(e, "portfolio")}
               >
                 работы
@@ -31,7 +31,7 @@ function App() {
             </li>
             <li>
               <a
-                href="#feedback"
+                className="buttonCursor"
                 onClick={(e) => scrollToNotLink(e, "feedback")}
               >
                 контакты

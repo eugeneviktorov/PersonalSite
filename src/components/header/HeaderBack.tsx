@@ -17,7 +17,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a className="buttonBack" onClick={() => navigate(-1)}>
+              <a className="buttonCursor" onClick={() => navigate(-1)}>
                 Назад
               </a>
             </li>

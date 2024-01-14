@@ -15,7 +15,7 @@ function App() {
         <img src={Logo} className="logoSize" />
       </div>
       <div className="buttonPosition">
-        <a href="https://viktorovvv.ru">
+        <a href="/">
           <div className="buttonLink">
             <div className="buttonText">На главную</div>
           </div>

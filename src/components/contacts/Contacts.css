@@ -173,6 +173,8 @@
 .confidentiality {
     color: var(--globalColorDarkBlue);
     margin-top: 1em;
+    width: 100%;
+    font-size: 14px;
     font-weight: 600;
     -webkit-user-select: text;
     /* Safari */
@@ -186,25 +188,31 @@
 
 @media (min-width:280px) {
     .confidentiality {
-        width: 100%;
-        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .confidentiality {
+        text-align: left;
     }
 }
 
 /* Контактные данные */
 @media (min-width:280px) {
     .contacts {
-        vertical-align: 0em;
+        margin-top: 2em;
         text-align: center;
     }
 }
 
 @media (min-width:768px) {
     .contacts {
+        margin-top: 0em;
         margin-left: 3em;
+        display: inline-block;
         vertical-align: top;
         text-align: left;
-        display: inline-block;
     }
 }
 
