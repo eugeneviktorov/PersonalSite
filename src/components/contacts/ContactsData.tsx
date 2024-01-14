@@ -1,6 +1,7 @@
 import * as React from "react";
 import GitHub from "../../assets/socialIcons/GitHub.svg";
 import Figma from "../../assets/socialIcons/Figma.svg";
+import Linkedin from "../../assets/socialIcons/Linkedin.svg";
 
 const App = ({ fullName, number, email }) => {
   return (
@@ -23,6 +24,12 @@ const App = ({ fullName, number, email }) => {
       <a href="https://www.figma.com/@eugeneviktorov" className="icoLink">
         <div className="icoPosition">
           <img src={Figma} className="ico" />
+        </div>
+      </a>
+      {/* Линк */}
+      <a href="https://www.linkedin.com/in/eugeneviktorov" className="icoLink">
+        <div className="icoPosition">
+          <img src={Linkedin} className="ico" />
         </div>
       </a>
     </div>
