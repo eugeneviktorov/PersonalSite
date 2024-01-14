@@ -1,7 +1,7 @@
 import * as React from "react";
-import GitHub from "../../assets/socialIcons/GitHub.svg";
-import Figma from "../../assets/socialIcons/Figma.svg";
-import Linkedin from "../../assets/socialIcons/Linkedin.svg";
+import GitHub from "../../assets/icons/GitHub.svg";
+import Figma from "../../assets/icons/Figma.svg";
+import Linkedin from "../../assets/icons/Linkedin.svg";
 
 const App = ({ fullName, number, email }) => {
   return (
