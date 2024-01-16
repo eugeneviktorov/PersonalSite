@@ -2,7 +2,15 @@ import * as React from "react";
 import emailjs from "emailjs-com";
 import InputMask from "react-input-mask";
 
-const App = ({ serviceId, templateId, userId }) => {
+const App = ({
+  serviceId,
+  templateId,
+  userId,
+}: {
+  serviceId: string;
+  templateId: string;
+  userId: string;
+}) => {
   const [fromName, setFromName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [telNumber, setTelNumber] = React.useState("");

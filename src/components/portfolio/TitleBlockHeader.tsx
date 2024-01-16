@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function App({ text }) {
+function App({ text }: { text: string }) {
   return (
     <div>
       <div className="titleBlockHeader">{text}</div>

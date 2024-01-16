@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Portfolio.css";
 
-const PortfolioItem = ({ item }) => (
+const PortfolioItem = ({ item }: { item: any }) => (
   <div className="portfolioPhoto">
     <a href={item.link}>
       <div className="hideImage">

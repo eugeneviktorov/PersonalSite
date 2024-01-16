@@ -3,7 +3,15 @@ import GitHub from "../../assets/icons/GitHub.svg";
 import Figma from "../../assets/icons/Figma.svg";
 import Linkedin from "../../assets/icons/Linkedin.svg";
 
-const App = ({ fullName, number, email }) => {
+const App = ({
+  fullName,
+  number,
+  email,
+}: {
+  fullName: string;
+  number: string;
+  email: string;
+}) => {
   return (
     <div>
       {/* Персональные данные */}
