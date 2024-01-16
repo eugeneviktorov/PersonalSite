@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logotype from "../../assets/icons/Logo.svg";
+import Logotype from "../../assets/icons/Logotype-site.svg";
 import "./Header.css";
 
 function App() {

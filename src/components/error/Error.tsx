@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./Error.css";
-import Logo from "../../assets/icons/Logo.svg";
+import Logo from "../../assets/icons/Logotype-site.svg";
 
 function App() {
   return (
