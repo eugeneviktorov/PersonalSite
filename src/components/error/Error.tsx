@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className="errorNumber">404</div>
       <div className="logoPosition">
-        <img src={Logo} className="logoSize" />
+        <img src={Logo} className="logoSize" alt="LogoSite" />
       </div>
       <div className="buttonPosition">
         <a href="/">

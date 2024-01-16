@@ -11,15 +11,15 @@ function App() {
       <header>
         <a href="/">
           <div className="logotype">
-            <img src={Logotype} className="logo" />
+            <img src={Logotype} className="logo" alt="LogoSite" />
           </div>
         </a>
         <nav>
           <ul>
             <li>
-              <a className="buttonCursor" onClick={() => navigate(-1)}>
+              <div className="buttonCursor" onClick={() => navigate(-1)}>
                 Назад
-              </a>
+              </div>
             </li>
           </ul>
         </nav>

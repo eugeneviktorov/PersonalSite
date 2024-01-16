@@ -17,19 +17,19 @@ const App = ({ fullName, number, email }) => {
       {/* Линк */}
       <a href="https://github.com/eugeneviktorov" className="icoLink">
         <div className="icoPosition">
-          <img src={GitHub} className="ico" />
+          <img src={GitHub} className="ico" alt="GitHub" />
         </div>
       </a>
       {/* Линк */}
       <a href="https://www.figma.com/@eugeneviktorov" className="icoLink">
         <div className="icoPosition">
-          <img src={Figma} className="ico" />
+          <img src={Figma} className="ico" alt="Figma" />
         </div>
       </a>
       {/* Линк */}
       <a href="https://www.linkedin.com/in/eugeneviktorov" className="icoLink">
         <div className="icoPosition">
-          <img src={Linkedin} className="ico" />
+          <img src={Linkedin} className="ico" alt="Linkedin" />
         </div>
       </a>
     </div>

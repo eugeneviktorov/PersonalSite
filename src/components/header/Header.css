@@ -21,7 +21,7 @@ nav ul {
     align-items: center;
 }
 
-ul li a {
+ul li .buttonCursor {
     color: var(--globalColorDarkBlue);
     text-transform: uppercase;
     text-decoration: none;
@@ -31,7 +31,7 @@ ul li a {
 }
 
 @media (min-width:280px) {
-    ul li a {
+    ul li .buttonCursor {
         padding: 0.2em;
         font-size: 14px;
         margin-right: 0.1em;
@@ -39,7 +39,7 @@ ul li a {
 }
 
 @media (min-width:320px) {
-    ul li a {
+    ul li .buttonCursor {
         padding: 0.4em;
         font-size: 14px;
         margin-right: 0.7em;
@@ -47,7 +47,7 @@ ul li a {
 }
 
 @media (min-width:425px) {
-    ul li a {
+    ul li .buttonCursor {
         padding: 0.5em;
         font-size: 16px;
         margin-right: 0.7em;
@@ -55,19 +55,19 @@ ul li a {
 }
 
 @media (min-width:768px) {
-    ul li a {
+    ul li .buttonCursor {
         font-size: 18px;
         margin-right: 2em;
     }
 }
 
-ul li a:hover {
+ul li .buttonCursor:hover {
     background: var(--globalColorBlue);
     color: var(--globalColorWhite);
     border-radius: 10em;
 }
 
-ul li a:active {
+ul li .buttonCursor:active {
     background: var(--globalColorDarkBlue);
     color: var(--globalColorWhite);
     transition: 0s;
@@ -139,5 +139,4 @@ ul li a:active {
 /* Кнопка назад */
 .buttonCursor {
     cursor: pointer;
-    width: 0%;
 }

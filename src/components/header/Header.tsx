@@ -16,26 +16,26 @@ function App() {
       <header>
         <a href="/">
           <div className="logotype">
-            <img src={Logotype} className="logo" />
+            <img src={Logotype} className="logo" alt="LogoSite" />
           </div>
         </a>
         <nav>
           <ul>
             <li>
-              <a
+              <div
                 className="buttonCursor"
                 onClick={(e) => scrollToNotLink(e, "portfolio")}
               >
                 работы
-              </a>
+              </div>
             </li>
             <li>
-              <a
+              <div
                 className="buttonCursor"
                 onClick={(e) => scrollToNotLink(e, "feedback")}
               >
                 контакты
-              </a>
+              </div>
             </li>
           </ul>
         </nav>
