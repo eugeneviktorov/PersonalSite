@@ -4,7 +4,7 @@ import Logo from "../../assets/icons/Logotype-site.svg";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <div className="pageNotFound">
         Страница
         <br />

@@ -7,7 +7,7 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <div className="App">
+    <div>
       <header>
         <a href="/">
           <div className="logotype">

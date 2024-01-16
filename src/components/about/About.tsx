@@ -4,7 +4,7 @@ import WorkTitle from "./WorkTitle";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <div className="blockHeader">
         <div className="about">
           Разработка организованных цифровых решений,

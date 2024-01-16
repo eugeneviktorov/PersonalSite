@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <footer>
         Физ.лицо
         <br />

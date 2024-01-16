@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <div id="portfolio"></div>
       <div className="blockHeader">
         <TitleBlockHeader text={"Портфолио"} />

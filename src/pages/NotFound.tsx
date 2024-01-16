@@ -7,7 +7,7 @@ import Footer from "../components/footer/Footer";
 function App() {
   document.title = "404";
   return (
-    <div className="App">
+    <div>
       <Preload />
       <Error />
       <Footer />

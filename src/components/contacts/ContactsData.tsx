@@ -5,7 +5,7 @@ import Linkedin from "../../assets/icons/Linkedin.svg";
 
 const App = ({ fullName, number, email }) => {
   return (
-    <div className="App">
+    <div>
       {/* Персональные данные */}
       <div className="name">{fullName}</div>
       <div className="linkContacts">

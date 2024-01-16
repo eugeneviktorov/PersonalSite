@@ -8,7 +8,7 @@ import FeedbackForm from "./FeedbackForm";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <div id="feedback"></div>
       <div className="blockHeader">
         <TitleBlockHeader text={"Контакты и обратная связь"} />
