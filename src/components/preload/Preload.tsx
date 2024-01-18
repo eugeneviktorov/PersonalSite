@@ -1,28 +1,43 @@
 import * as React from "react";
+import { useLocation } from "react-router-dom";
 import Logotype from "../../assets/icons/Preload.svg";
 import "./Preload.css";
 
-function App() {
-  React.useEffect(() => {
-    // Стартовый логотип (загрузка)
-    const preloadElement = document.querySelector(".preload");
+const Preload = () => {
+  const [loaded, setLoaded] = React.useState(false);
+  const location = useLocation();
 
-    const hidePreload = () => {
-      preloadElement.classList.add("invisible");
+  React.useEffect(() => {
+    const handleLoad = () => {
+      setTimeout(() => {
+        setLoaded(true);
+      }, 1000);
     };
 
-    const timeoutId = setTimeout(hidePreload, 1000);
-    // Очистка таймаута при размонтировании компонента
-    return () => clearTimeout(timeoutId);
-  }, []);
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, [location.pathname]);
+
+  React.useEffect(() => {
+    const preloadElement = document.querySelector(".preload");
+
+    if (preloadElement) {
+      preloadElement.classList.toggle("invisible", loaded);
+    }
+  }, [loaded]);
 
   return (
-    <div>
-      <div className="preload">
-        <img src={Logotype} className="preLogo" width="300" alt="preload" />
-      </div>
+    <div className={`preload ${loaded ? "invisible" : ""}`}>
+      <img src={Logotype} className="preLogo" width="300" alt="preload" />
     </div>
   );
-}
+};
 
-export default App;
+export default Preload;
