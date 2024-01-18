@@ -1,4 +1,5 @@
 import * as React from "react";
+import ContactsLink from "./ContactsLink";
 import GitHub from "../../assets/icons/GitHub.svg";
 import Figma from "../../assets/icons/Figma.svg";
 import Linkedin from "../../assets/icons/Linkedin.svg";
@@ -22,24 +23,22 @@ const App = ({
           <a href={`mailto:${email}`}>{email}</a>
         </div>
       </div>
-      {/* Линк */}
-      <a href="https://github.com/eugeneviktorov" className="icoLink">
-        <div className="icoPosition">
-          <img src={GitHub} className="ico" alt="GitHub" />
-        </div>
-      </a>
-      {/* Линк */}
-      <a href="https://www.figma.com/@eugeneviktorov" className="icoLink">
-        <div className="icoPosition">
-          <img src={Figma} className="ico" alt="Figma" />
-        </div>
-      </a>
-      {/* Линк */}
-      <a href="https://www.linkedin.com/in/eugeneviktorov" className="icoLink">
-        <div className="icoPosition">
-          <img src={Linkedin} className="ico" alt="Linkedin" />
-        </div>
-      </a>
+      {/* Контактные ссылки */}
+      <ContactsLink
+        link={"https://github.com/eugeneviktorov"}
+        icon={GitHub}
+        alt={"GitHub"}
+      />
+      <ContactsLink
+        link={"https://www.figma.com/@eugeneviktorov"}
+        icon={Figma}
+        alt={"Figma"}
+      />
+      <ContactsLink
+        link={"https://www.linkedin.com/in/eugeneviktorov"}
+        icon={Linkedin}
+        alt={"Linkedin"}
+      />
     </div>
   );
 };
