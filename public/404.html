@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>404</title>
+  <link rel="apple-touch-icon" href="icons/apple-icon(192x192).png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/apple-icon-precomposed-192x192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta property="og:title" content="Организованные цифровые решения">
+  <meta property="og:site_name" content="Викторов">
+  <meta property="og:url" content="https://viktorovvv.ru">
+  <meta property="og:description" content="• Разработка • UI-Дизайн • Поддержка •">
+  <meta property="og:image" content="https://viktorovvv.ru/icons/logo-512x512.png">
+  <meta property="og:image:width" content="968" />
+  <meta property="og:image:height" content="504" />
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Стартовый логотип -->
+  <div class="preload">
+    <img src="icons/logo-512x512.png" class="preLogo" width="300" />
+  </div>
+  <div class="wrapper"></div>
+  <div class="pageNotFound">Страница<br>не найдена</div>
+  <div class="errorNumber">404</div>
+  <div class="logoPosition"><img src="./icons/Logotype-site.png" class="logoSize" /></div>
+  <div class="buttonPosition">
+    <a href="/">
+      <div class="buttonLink">
+        <div class="buttonText">На главную</div>
+      </div>
+  </div>
+  </a>
+  <!-- Данные организации -->
+  <footer>
+    Физ.лицо<br>Викторов Евгений<br><br>
+    +7 (913) 684-55-43<br>
+    eviktorovvv@gmail.com<br><br>
+    <a href="documents/terms-of-use.txt">Пользовательское соглашение</a><br><br>
+    viktorovvv.ru<br>
+    © 2023 - 2024
+  </footer>
+  <style>
+    /* Глобальные цвета */
+    :root {
+      --globalColorWhite: #FFFFFF;
+      --globalBackground: #FAFAFA;
+      --globalColorDarkGray: #7A7A7A;
+      --globalColorGray: #CECECE;
+      --globalColorBlue: #005AF5;
+      --globalColorDarkBlue: #162A4C;
+    }
+
+    /* Основа страницы */
+    html {
+      scroll-behavior: smooth;
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+/Edge */
+      user-select: none;
+      /* Standard */
+    }
+
+    body {
+      background: var(--globalBackground);
+      font-family: 'Nunito';
+    }
+
+    br {
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+/Edge */
+      user-select: none;
+      /* Standard */
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.7em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 20px 0px 0px 20px;
+      background: var(--globalColorGray);
+    }
+
+    a {
+      color: var(--globalColorBlue);
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* Положение загрузочного экрана */
+    .preload {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--globalColorWhite);
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: all 0.7s ease-in-out;
+      z-index: 999;
+    }
+
+    /* Скрытие загрузочного экрана */
+    .preload.invisible {
+      opacity: 0;
+      z-index: -1;
+    }
+
+    /* Положение логотипа */
+    .preLogo {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Главный текст */
+    .pageNotFound {
+      text-align: center;
+      margin-top: 1em;
+      color: var(--globalColorDarkBlue);
+    }
+
+    @media (min-width:280px) {
+      .pageNotFound {
+        font-size: 28px;
+      }
+    }
+
+    @media (min-width:375px) {
+      .pageNotFound {
+        font-size: 38px;
+      }
+    }
+
+    @media (min-width:2560px) {
+      .pageNotFound {
+        font-size: 58px;
+      }
+    }
+
+    /* Номер ошибки */
+    .errorNumber {
+      text-align: center;
+      font-size: 108px;
+      color: var(--globalColorGray);
+      font-weight: 900;
+      margin-top: 0.2em;
+    }
+
+    @media (min-width:2560px) {
+      .errorNumber {
+        font-size: 152px;
+      }
+    }
+
+    /* Логотип сайта */
+    .logoPosition {
+      text-align: center;
+      pointer-events: none;
+      margin-top: 1.5em;
+    }
+
+    @media (min-width:280px) {
+      .logoSize {
+        width: 250px;
+      }
+    }
+
+    @media (min-width:375px) {
+      .logoSize {
+        width: 350px;
+      }
+    }
+
+    @media (min-width:425px) {
+      .logoSize {
+        width: 400px;
+      }
+    }
+
+    @media (min-width:768px) {
+      .logoSize {
+        width: 500px;
+      }
+    }
+
+    @media (min-width:2560px) {
+      .logoSize {
+        width: 700px;
+      }
+    }
+
+    /* Кнопка главной страницы */
+    .buttonPosition {
+      text-align: center;
+    }
+
+    .buttonLink {
+      margin-top: 2em;
+      display: inline-block;
+    }
+
+    .buttonText {
+      background-color: var(--globalColorBlue);
+      color: var(--globalColorWhite);
+      padding: 0.8em 1.5em 0.8em 1.5em;
+      border-radius: 1em;
+      transition: 0.5s;
+    }
+
+    @media (min-width:280px) {
+      .buttonText {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width:320px) {
+      .buttonText {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width:425px) {
+      .buttonText {
+        font-size: 22px;
+      }
+    }
+
+    @media (min-width:2560px) {
+      .buttonText {
+        font-size: 28px;
+      }
+    }
+
+    .buttonText:active {
+      background-color: var(--globalColorDarkBlue);
+      transition: 0s;
+    }
+
+    /* БЛОК - Данные организации */
+    footer {
+      color: var(--globalColorDarkGray);
+      text-align: center;
+      -webkit-user-select: text;
+      /* Safari */
+      -moz-user-select: text;
+      /* Firefox */
+      -ms-user-select: text;
+      /* IE10+/Edge */
+      user-select: text;
+      /* Standard */
+    }
+
+    @media (min-width:280px) {
+      footer {
+        margin-top: 8em;
+        margin-bottom: 8em;
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width:320px) {
+      footer {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width:425px) {
+      footer {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width:2560px) {
+      footer {
+        font-size: 18px;
+      }
+    }
+  </style>
+  <script>
+    // Стартовый логотип (загрузка)
+    setTimeout(() => {
+      document.querySelector(".preload").classList.add("invisible");
+    }, 1000);
+  </script>
+  </div>
+</body>
+
+</html>
