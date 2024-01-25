@@ -50,7 +50,7 @@
     }
 }
 
-/* Фото проекта */
+/* Изображения проекта */
 .portfolioPhoto {
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
@@ -87,14 +87,28 @@
     }
 }
 
-
-/* Приближение фото внутри рамки */
+/* Приближение изображения внутри рамки */
 .hideImage {
     border-radius: 1em;
     overflow: hidden;
+    position: relative;
 }
 
-/* Настройка приближения фото */
+/* Предварительная загрузка изображения */
+.loadingImage {
+    background: var(--globalBackground);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loadingImage.hidden {
+    display: none;
+}
+
+/* Настройка приближения изображения */
 .portfolioPhotoSettings {
     width: 100%;
     border-radius: 1em;
