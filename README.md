@@ -4,6 +4,11 @@
 
 <img src="./public/icons/Cover.png"></a>
 
+### Content
+
+- [Getting Started](#getting-started-with-create-react-app)
+- [Setting up htaccess](#setting-up-htaccess-build-configuration-file)
+
 <br><br><br>
 
 # Getting Started with Create React App
@@ -76,3 +81,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<br><br><br>
+
+# Setting up htaccess build configuration file
+
+### If Build is used for github pages and not regular hosting
+
+```
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+```
