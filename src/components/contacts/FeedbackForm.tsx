@@ -82,6 +82,7 @@ const App = ({
       <form id="form" onSubmit={handleSubmit}>
         {/* Поле ввода имени */}
         <input
+          type="text"
           name="from_name"
           className={`inputFormName ${
             inputErrors.fromName ? "isNotValid" : ""
@@ -92,6 +93,7 @@ const App = ({
         />
         {/* Поле ввода электронной почты */}
         <input
+          type="email"
           name="email_id"
           className={`inputFormEmail ${inputErrors.email ? "isNotValid" : ""}`}
           placeholder="example@email.com"
@@ -100,7 +102,7 @@ const App = ({
         />
         {/* Поле ввода номера телефона */}
         <InputMask
-          type="text"
+          type="tel"
           name="tel_number"
           mask="+7 (999) 999-99-99"
           maskChar="_"
