@@ -54,36 +54,56 @@
 .portfolioPhoto {
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
-    border-radius: 1.5em;
     overflow: hidden;
 }
 
 @media (min-width:280px) {
     .portfolioPhoto {
-        display: block;
-        margin-bottom: 2em;
         padding: 0.5em;
+        display: block;
+        border-radius: 1em;
+        margin-bottom: 2em;
     }
 }
 
 @media (min-width:425px) {
     .portfolioPhoto {
-        padding: 1em;
+        padding: 0.7em;
+        border-radius: 1.5em;
     }
 }
 
 @media (min-width:768px) {
     .portfolioPhoto {
-        width: 40%;
+        width: 44%;
         display: inline-block;
-        margin-right: 2.4em;
-        margin-bottom: 2.4em;
+        margin-bottom: 2.6em;
+    }
+
+    .portfolioPhoto:nth-child(2n) {
+        margin-right: 2.6em;
+    }
+}
+
+@media (min-width:1024px) {
+    .portfolioPhoto {
+        width: 45%;
+        padding: 0.8em;
+        margin-bottom: 1.3em;
+    }
+
+    .portfolioPhoto:nth-child(2n) {
+        margin-right: 1.3em;
     }
 }
 
 @media (min-width:1440px) {
     .portfolioPhoto {
-        margin-right: 3.2em;
+        margin-bottom: 1.5em;
+    }
+
+    .portfolioPhoto:nth-child(2n) {
+        margin-right: 1.5em;
     }
 }
 
@@ -187,13 +207,13 @@
     display: inline-block;
     border-radius: 1em;
     transition: 0.5s;
-    margin-top: -1em;
 }
 
 @media (min-width:280px) {
     .buttonCases {
         padding: 0.8em 1.3em 0.8em 1.3em;
         font-size: 16px;
+        margin-top: -1em;
     }
 }
 
@@ -208,6 +228,12 @@
     .buttonCases {
         padding: 0.9em 1.3em 0.9em 1.3em;
         font-size: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .buttonCases {
+        margin-top: 0em;
     }
 }
 

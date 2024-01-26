@@ -30,19 +30,13 @@
 
 @media (min-width:768px) {
     .blockHeader {
-        width: 46em;
-    }
-}
-
-@media (min-width:1024px) {
-    .blockHeader {
-        width: 51em;
+        width: 45em;
     }
 }
 
 @media (min-width:1440px) {
     .blockHeader {
-        width: 54em;
+        width: 47em;
     }
 }
 

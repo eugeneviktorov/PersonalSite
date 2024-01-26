@@ -24,21 +24,23 @@ const App = ({
         </div>
       </div>
       {/* Контактные ссылки */}
-      <ContactsLink
-        link={"https://github.com/eugeneviktorov"}
-        icon={GitHub}
-        alt={"GitHub"}
-      />
-      <ContactsLink
-        link={"https://www.figma.com/@eugeneviktorov"}
-        icon={Figma}
-        alt={"Figma"}
-      />
-      <ContactsLink
-        link={"https://www.linkedin.com/in/eugeneviktorov"}
-        icon={Linkedin}
-        alt={"Linkedin"}
-      />
+      <div className="icoLinkPosition">
+        <ContactsLink
+          link={"https://github.com/eugeneviktorov"}
+          icon={GitHub}
+          alt={"GitHub"}
+        />
+        <ContactsLink
+          link={"https://www.figma.com/@eugeneviktorov"}
+          icon={Figma}
+          alt={"Figma"}
+        />
+        <ContactsLink
+          link={"https://www.linkedin.com/in/eugeneviktorov"}
+          icon={Linkedin}
+          alt={"Linkedin"}
+        />
+      </div>
     </div>
   );
 };
