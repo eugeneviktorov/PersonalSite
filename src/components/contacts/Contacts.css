@@ -34,7 +34,6 @@
 /* Заполнитель полей ввода */
 ::placeholder {
     color: var(--globalColorGray);
-    font-weight: 400;
     font-family: Nunito-Bold;
 }
 
@@ -42,6 +41,8 @@
 .inputFormName,
 .inputFormEmail,
 .inputFormPhone {
+    /* Safari shadow */
+    background-clip: padding-box;
     color: var(--globalColorDarkBlue);
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
@@ -120,6 +121,7 @@
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width:2560px) {
@@ -145,6 +147,7 @@
     cursor: pointer;
     border-radius: 1em;
     font-family: Nunito-Bold;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width:280px) {
@@ -176,7 +179,6 @@
     margin-top: 1em;
     width: 100%;
     font-size: 14px;
-    font-weight: 600;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;
@@ -185,6 +187,7 @@
     /* IE10+/Edge */
     user-select: text;
     /* Standard */
+    -webkit-tap-highlight-color: initial;
 }
 
 @media (min-width:280px) {
@@ -231,6 +234,7 @@
     /* IE10+/Edge */
     user-select: text;
     /* Standard */
+    -webkit-tap-highlight-color: initial;
 }
 
 @media (min-width:280px) {
@@ -285,6 +289,7 @@
     /* IE10+/Edge */
     user-select: text;
     /* Standard */
+    -webkit-tap-highlight-color: initial;
 }
 
 @media (min-width:280px) {
@@ -329,6 +334,7 @@
     .icoLinkPosition {
         width: 100%;
         margin-top: 1em;
+        -webkit-tap-highlight-color: transparent;
     }
 }
 

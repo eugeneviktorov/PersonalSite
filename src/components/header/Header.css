@@ -9,6 +9,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width:425px) {
@@ -31,7 +32,6 @@ ul li .buttonCursor {
     color: var(--globalColorDarkBlue);
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 10em;
     transition: 0.7s;
 }

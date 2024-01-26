@@ -3,7 +3,6 @@
     color: var(--globalColorBlue);
     margin-bottom: 1em;
     display: inline-block;
-    font-weight: 900;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;
@@ -55,6 +54,7 @@
     background-color: var(--globalColorWhite);
     box-shadow: var(--globalBoxShadow);
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width:280px) {
@@ -66,7 +66,7 @@
     }
 }
 
-@media (min-width:425px) {
+@media (min-width:375px) {
     .portfolioPhoto {
         padding: 0.7em;
         border-radius: 1.5em;
@@ -112,6 +112,7 @@
     border-radius: 1em;
     overflow: hidden;
     position: relative;
+    mask-image: radial-gradient(white, white);
 }
 
 /* Предварительная загрузка изображения */
@@ -142,7 +143,6 @@
 
 /* Название проекта */
 .portfolioTitleName {
-    font-weight: 700;
     color: var(--globalColorBlue);
     margin-top: 0.3em;
     white-space: nowrap;
@@ -156,6 +156,7 @@
     /* IE10+/Edge */
     user-select: text;
     /* Standard */
+    -webkit-tap-highlight-color: initial;
 }
 
 @media (min-width:280px) {
@@ -172,7 +173,6 @@
 
 /* Описание проекта */
 .portfolioTextAbout {
-    font-weight: 700;
     color: var(--globalColorDarkBlue);
     margin-top: 0.3em;
     white-space: nowrap;
@@ -204,6 +204,7 @@
 .buttonCases {
     background-color: var(--globalColorBlue);
     color: var(--globalColorWhite);
+    padding: 0.9em 1.3em 0.9em 1.3em;
     display: inline-block;
     border-radius: 1em;
     transition: 0.5s;
@@ -211,7 +212,6 @@
 
 @media (min-width:280px) {
     .buttonCases {
-        padding: 0.8em 1.3em 0.8em 1.3em;
         font-size: 16px;
         margin-top: -1em;
     }
@@ -219,14 +219,12 @@
 
 @media (min-width:320px) {
     .buttonCases {
-        padding: 0.8em 1.3em 0.8em 1.3em;
         font-size: 18px;
     }
 }
 
 @media (min-width:425px) {
     .buttonCases {
-        padding: 0.9em 1.3em 0.9em 1.3em;
         font-size: 20px;
     }
 }

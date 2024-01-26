@@ -2,6 +2,7 @@
 .blockHeader {
     margin-left: auto;
     margin-right: auto;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width:280px) {
@@ -46,7 +47,6 @@
     display: inline-block;
     margin-top: 2.5em;
     text-align: left;
-    font-weight: 700;
     -webkit-user-select: text;
     /* Safari */
     -moz-user-select: text;
