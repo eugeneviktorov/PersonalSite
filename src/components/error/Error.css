@@ -76,6 +76,7 @@
 /* Кнопка главной страницы */
 .buttonPosition {
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .buttonLink {
@@ -113,6 +114,10 @@
     .buttonText {
         font-size: 28px;
     }
+}
+
+.buttonText:hover {
+    background-color: var(--globalColorBlueSelect);
 }
 
 .buttonText:active {

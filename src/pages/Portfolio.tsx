@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer";
 function App() {
   document.title = "Портфолио";
   return (
-    <div>
+    <div className="app">
       <Preload />
       <HeaderBack />
       <MainPortfolio />
