@@ -4,10 +4,15 @@
 
 <img src="./public/icons/Cover.png"></a>
 
+<br><br><br>
+
 ### Content
 
-- [Getting Started](#getting-started-with-create-react-app)
-- [Setting up htaccess](#setting-up-htaccess-build-configuration-file)
+### • [Getting Started](#getting-started-with-create-react-app)
+
+### • [Setting up htaccess](#setting-up-htaccess-build-configuration-file)
+
+### • [Build App](#build-app)
 
 <br><br><br>
 
@@ -93,3 +98,11 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 ```
+
+<br><br><br>
+
+# Build app
+
+### To build a site, enter the command
+
+### `npm run deploy`
