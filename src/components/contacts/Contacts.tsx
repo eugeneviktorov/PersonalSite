@@ -1,7 +1,8 @@
 import * as React from "react";
 import "../about/About.css";
 import "../portfolio/Portfolio.css";
-import "./Contacts.css";
+import "../contacts/FeedbackForm.css";
+import "./ContactsLink.css";
 import TitleBlockHeader from "../portfolio/TitleBlockHeader";
 import ContactsData from "./ContactsData";
 import FeedbackForm from "./FeedbackForm";

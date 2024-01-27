@@ -1,54 +1,3 @@
-/* Заголовок блока */
-.titleBlockHeader {
-    color: var(--globalColorBlue);
-    margin-bottom: 1em;
-    display: inline-block;
-    -webkit-user-select: text;
-    /* Safari */
-    -moz-user-select: text;
-    /* Firefox */
-    -ms-user-select: text;
-    /* IE10+/Edge */
-    user-select: text;
-    /* Standard */
-}
-
-@media (min-width:280px) {
-    .titleBlockHeader {
-        font-size: 28px;
-        margin-top: 2em;
-    }
-}
-
-@media (min-width:320px) {
-    .titleBlockHeader {
-        font-size: 30px;
-        margin-top: 2em;
-    }
-}
-
-@media (min-width:375px) {
-    .titleBlockHeader {
-        font-size: 32px;
-        margin-top: 3em;
-        width: 80%;
-    }
-}
-
-@media (min-width:1024px) {
-    .titleBlockHeader {
-        font-size: 32px;
-        margin-top: 4em;
-    }
-}
-
-@media (min-width:1920px) {
-    .titleBlockHeader {
-        font-size: 32px;
-        margin-top: 5em;
-    }
-}
-
 /* Изображения проекта */
 .portfolioPhoto {
     background-color: var(--globalColorWhite);
@@ -239,6 +188,10 @@
     .buttonCases {
         font-size: 26px;
     }
+}
+
+.buttonCases:hover {
+    background-color: var(--globalColorBlueSelect);
 }
 
 .buttonCases:active {
