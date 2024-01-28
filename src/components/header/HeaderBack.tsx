@@ -1,10 +1,19 @@
 import * as React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Logotype from "../../assets/icons/Logotype-site.svg";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleGoBack = () => {
+    if (location.pathname === "/") {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  };
 
   return (
     <div>
@@ -17,7 +26,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <div className="buttonCursor" onClick={() => navigate(-1)}>
+              <div className="buttonCursor" onClick={handleGoBack}>
                 Назад
               </div>
             </li>
