@@ -1,97 +1,99 @@
 # PersonalSite
 
-### <a href="https://viktorovvv.ru">viktorovvv.ru
+<br>
 
-<img src="./public/icons/Cover.png"></a>
+### Содержание
 
-<br><br><br>
+### • [Начало работы](#начало-работы-с-create-react-app)
 
-### Content
-
-### • [Getting Started](#getting-started-with-create-react-app)
-
-### • [Setting up htaccess](#setting-up-htaccess-build-configuration-file)
-
-### • [Build App](#build-app)
+### • [Настройка файлов](#настройка-файлов-конфигурации-и-кода)
 
 <br><br><br>
 
-# Getting Started with Create React App
+# Начало работы с Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект был создан с помощью [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Доступные скрипты
 
-In the project directory, you can run:
+В директории проекта вы можете выполнить следующие команды:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Запускает приложение в режиме разработки.\
+Откройте [http://localhost:3000](http://localhost:3000), чтобы просмотреть его в браузере.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Страница будет перезагружаться при внесении изменений.\
+Вы также можете увидеть ошибки линтинга в консоли.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запускает тестовый раннер в интерактивном режиме наблюдения.\
+См. раздел о [запуске тестов](https://facebook.github.io/create-react-app/docs/running-tests) для получения дополнительной информации.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Собирает приложение для продакшена в папку `build`.\
+Оно правильно объединяет React в режиме продакшена и оптимизирует сборку для достижения наилучшей производительности.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Сборка минифицируется, и в имена файлов включаются хеши.\
+Ваше приложение готово к развёртыванию!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+См. раздел о [развёртывании](https://facebook.github.io/create-react-app/docs/deployment) для получения дополнительной информации.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Примечание: это односторонняя операция. После выполнения `eject` вы не сможете вернуться обратно!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Если вам не устраивает инструмент сборки и выбранные настройки, вы можете выполнить `eject` в любой момент. Эта команда удалит зависимость от одной сборки из вашего проекта.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Вместо этого она скопирует все файлы конфигурации и транзитивные зависимости (webpack, Babel, ESLint и т. д.) прямо в ваш проект, так что вы сможете полностью контролировать их. Все команды, кроме `eject`, всё равно будут работать, но они будут ссылаться на скопированные скрипты, так что вы сможете их настраивать. На этом этапе вы остаётесь сам на сам с проектом.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Вам не обязательно использовать `eject`. Состав функций, которые предоставляются по умолчанию, подходит для небольших и средних развёртываний, и вы не должны чувствовать себя обязанными использовать эту функцию. Тем не менее, мы понимаем, что этот инструмент не будет полезен, если вы не сможете настроить его, когда будете готовы к этому.
 
-## Learn More
+### `npm run deploy`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Сборка и развёртывание на GitHub Pages**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Этот скрипт предназначен для сборки вашего приложения и автоматической загрузки его в ветку `gh-pages` вашего репозитория на GitHub. Следуйте этой команде для быстрого развёртывания вашего сайта.
 
-### Code Splitting
+## Узнать больше
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Вы можете узнать больше в [документации по Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
 
-### Analyzing the Bundle Size
+Чтобы узнать React, ознакомьтесь с [документацией React](https://reactjs.org/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Разделение кода
 
-### Making a Progressive Web App
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Анализ размера пакета
 
-### Advanced Configuration
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Создание прогрессивного веб-приложения
 
-### Deployment
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Расширенная конфигурация
 
-### `npm run build` fails to minify
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Развёртывание
+
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### Ошибка минификации при `npm run build`
+
+Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 <br><br><br>
 
-# Setting up htaccess build configuration file
+# Настройка файлов конфигурации и кода
 
-### If Build is used for github pages and not regular hosting
+### `.htaccess`
+
+Если вы предназначаете ваше приложение для размещения на страницах GitHub, а не на обычном хостинге, обязательно настройте файл `.htaccess` в корне проекта добавив следующие правила:
 
 ```
 RewriteEngine On
@@ -99,10 +101,24 @@ RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 ```
 
-<br><br><br>
+Эти правила перенаправляют запросы на безопасное соединение (HTTPS), что важно для безопасности вашего сайта.
 
-# Build app
+### `/src/App.tsx`
 
-### To build a site, enter the command
+Перед запуском сборки приложения выберете необходимый вараинт сборки для вас:
 
-### `npm run deploy`
+**GitHub-pages**
+
+```
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+```
+
+**Hosting service**
+
+```
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+```
+
+### `/public/404.html`
+
+Этот файл следует использовать только в том случае, если вы разворачиваете ваш сайт на GitHub Pages.
