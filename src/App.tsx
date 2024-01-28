@@ -1,5 +1,6 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Использовать для github-pages
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Использовать для hosting service
 import "./App.css";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
