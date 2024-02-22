@@ -1,18 +1,18 @@
 import * as React from "react";
-import "../App.css";
+import AppPageView from "../components/AppPageView";
 import Preload from "../components/preload/Preload";
-import Error from "../components/error/Error";
+import ErrorPage from "../components/error/ErrorPage";
 import Footer from "../components/footer/Footer";
 
-function App() {
+function NotFound() {
   document.title = "404";
   return (
-    <div className="app">
+    <AppPageView>
       <Preload />
-      <Error />
+      <ErrorPage />
       <Footer />
-    </div>
+    </AppPageView>
   );
 }
 
-export default App;
+export default NotFound;

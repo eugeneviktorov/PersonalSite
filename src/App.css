@@ -6,16 +6,9 @@
 
 /* Глобальные цвета */
 :root {
-  --globalColorWhite: #FFFFFF;
-  --globalBackground: #FAFAFA;
-  --globalColorDarkWhite: #F1F1F1;
-  --globalColorDarkGray: #7A7A7A;
-  --globalColorGray: #CECECE;
-  --globalColorBlue: #005AF5;
-  --globalColorBlueSelect: #0B429A;
-  --globalColorDarkBlue: #162A4C;
-  --globalBoxShadow: 0px 0px 10px #00000010;
-  --globalColorBlueSelectTitle: #9bd0ffaf;
+  --Background: #FAFAFA;
+  --ColorGray: #CECECE;
+  --ColorBlue: #005AF5;
 }
 
 /* Основа страницы */
@@ -33,27 +26,10 @@ html {
 
 /* Настройка страницы */
 body {
-  background: var(--globalBackground);
+  background: var(--Background);
   overflow: overlay;
   margin: 0;
   font-family: Nunito-Bold;
-}
-
-/* Отступ */
-br {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-}
-
-/* Тег */
-ul {
-  padding-left: 1em;
 }
 
 /* Размер скроллбара */
@@ -64,119 +40,14 @@ ul {
 /* Стиль скроллбара */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px 0px 0px 20px;
-  background: var(--globalColorGray);
+  background: var(--ColorGray);
 }
 
 /* Ссылка */
 a {
-  color: var(--globalColorBlue);
+  color: var(--ColorBlue);
 }
 
 a:hover {
   text-decoration: none;
-}
-
-*::selection {
-  background-color: var(--globalColorBlueSelectTitle);
-}
-
-/* Скрытие экрана меньшего размера */
-@media (max-width: 279.2px) {
-  .app {
-    display: none;
-  }
-}
-
-/* Позиционирование блоков */
-.blockHeader {
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-tap-highlight-color: transparent;
-}
-
-@media (min-width:280px) {
-  .blockHeader {
-    width: 96%;
-  }
-}
-
-@media (min-width:320px) {
-  .blockHeader {
-    width: 92%;
-  }
-}
-
-@media (min-width:520px) {
-  .blockHeader {
-    width: 80%;
-  }
-}
-
-@media (min-width:620px) {
-  .blockHeader {
-    width: 70%;
-  }
-}
-
-@media (min-width:768px) {
-  .blockHeader {
-    width: 45em;
-  }
-}
-
-@media (min-width:1440px) {
-  .blockHeader {
-    width: 47em;
-  }
-}
-
-/* Заголовок блока */
-.titleBlockHeader {
-  color: var(--globalColorBlue);
-  margin-bottom: 1em;
-  display: inline-block;
-  -webkit-user-select: text;
-  /* Safari */
-  -moz-user-select: text;
-  /* Firefox */
-  -ms-user-select: text;
-  /* IE10+/Edge */
-  user-select: text;
-  /* Standard */
-}
-
-@media (min-width:280px) {
-  .titleBlockHeader {
-    font-size: 28px;
-    margin-top: 2em;
-  }
-}
-
-@media (min-width:320px) {
-  .titleBlockHeader {
-    font-size: 30px;
-    margin-top: 2em;
-  }
-}
-
-@media (min-width:375px) {
-  .titleBlockHeader {
-    font-size: 32px;
-    margin-top: 3em;
-    width: 80%;
-  }
-}
-
-@media (min-width:1024px) {
-  .titleBlockHeader {
-    font-size: 32px;
-    margin-top: 4em;
-  }
-}
-
-@media (min-width:1920px) {
-  .titleBlockHeader {
-    font-size: 32px;
-    margin-top: 5em;
-  }
 }

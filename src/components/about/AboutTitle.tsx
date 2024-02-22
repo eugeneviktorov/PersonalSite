@@ -2,32 +2,22 @@ import * as React from "react";
 import styled from "styled-components";
 import { GlobalColors } from "../ColorTheme";
 
-function WorkTitle({
-  TitleTop,
-  TitleBottom,
-}: {
-  TitleTop: string;
-  TitleBottom: string;
-}) {
+function AboutTitle() {
   return (
     <Container>
-      <ul>
-        <li>{TitleTop}</li>
-      </ul>
-      <ul>
-        <li>{TitleBottom}</li>
-      </ul>
+      Разработка организованных цифровых решений, <br />
+      <span> для пользователей</span>
     </Container>
   );
 }
 
-export default WorkTitle;
+export default AboutTitle;
 
 const Container = styled.div`
   color: ${GlobalColors.ColorDarkBlue};
   display: inline-block;
-  margin-right: 30%;
-  margin-top: 1em;
+  margin-top: 2.5em;
+  text-align: left;
   -webkit-user-select: text;
   /* Safari */
   -moz-user-select: text;
@@ -38,23 +28,34 @@ const Container = styled.div`
   /* Standard */
 
   @media (min-width: 280px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 320px) {
-    font-size: 22px;
-  }
-
-  @media (min-width: 375px) {
-    font-size: 24px;
-  }
-
-  @media (min-width: 425px) {
     font-size: 26px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     font-size: 28px;
-    margin-right: 3em;
+  }
+
+  @media (min-width: 375px) {
+    font-size: 34px;
+  }
+
+  @media (min-width: 425px) {
+    font-size: 38px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 44px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 48px;
+  }
+
+  span {
+    color: ${GlobalColors.ColorBlue};
   }
 `;

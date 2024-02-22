@@ -1,6 +1,6 @@
 {
   "name": "viktorovvv",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "homepage": "https://eugeneviktorov.github.io",
   "dependencies": {
@@ -12,8 +12,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-input-mask": "^2.0.4",
-    "react-router-dom": "^6.21.1",
+    "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

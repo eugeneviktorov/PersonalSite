@@ -8,6 +8,8 @@
 
 ### • [Настройка файлов](#настройка-файлов-конфигурации-и-кода)
 
+### • [Список библиотек](#список-используемых-npm-библиотек)
+
 <br><br><br>
 
 # Начало работы с Create React App
@@ -122,3 +124,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 ### `/public/404.html`
 
 Этот файл следует использовать только в том случае, если вы разворачиваете ваш сайт на GitHub Pages.
+
+<br><br><br>
+
+# Список используемых npm библиотек
+
+### `gh-pages`
+
+### `emailjs-com`
+
+### `react-input-mask`
+
+### `react-router-dom`
+
+### `styled-components`

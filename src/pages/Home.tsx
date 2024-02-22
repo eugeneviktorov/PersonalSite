@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../App.css";
+import AppPageView from "../components/AppPageView";
 import Preload from "../components/preload/Preload";
 import Header from "../components/header/Header";
 import About from "../components/about/About";
@@ -7,18 +7,18 @@ import InitialPortfolio from "../components/portfolio/InitialPortfolio";
 import Contacts from "../components/contacts/Contacts";
 import Footer from "../components/footer/Footer";
 
-function App() {
+function Home() {
   document.title = "Викторов";
   return (
-    <div className="app">
+    <AppPageView>
       <Preload />
-      <Header />
+      <Header main={"main"} />
       <About />
       <InitialPortfolio />
       <Contacts />
       <Footer />
-    </div>
+    </AppPageView>
   );
 }
 
-export default App;
+export default Home;

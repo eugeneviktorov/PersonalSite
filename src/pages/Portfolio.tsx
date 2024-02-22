@@ -1,20 +1,20 @@
 import * as React from "react";
-import "../App.css";
+import AppPageView from "../components/AppPageView";
 import Preload from "../components/preload/Preload";
-import HeaderBack from "../components/header/HeaderBack";
+import Header from "../components/header/Header";
 import MainPortfolio from "../components/portfolio/MainPortfolio";
 import Footer from "../components/footer/Footer";
 
-function App() {
+function Portfolio() {
   document.title = "Портфолио";
   return (
-    <div className="app">
+    <AppPageView>
       <Preload />
-      <HeaderBack />
+      <Header back={"back"} />
       <MainPortfolio />
       <Footer />
-    </div>
+    </AppPageView>
   );
 }
 
-export default App;
+export default Portfolio;

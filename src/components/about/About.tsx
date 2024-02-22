@@ -1,25 +1,18 @@
 import * as React from "react";
-import "./About.css";
+import PageContainer from "../PageContainer";
+import AboutTitle from "./AboutTitle";
+import Explanation from "./Explanation";
 import WorkTitle from "./WorkTitle";
 
-function App() {
+function About() {
   return (
-    <div>
-      <div className="blockHeader">
-        <div className="about">
-          Разработка организованных цифровых решений,
-          <br />
-          <span> для пользователей</span>
-        </div>
-        <div className="explanation">
-          Создание простых и понятных продуктов, которые помогут пользователям
-          быстро и эффективно решать свои задачи
-        </div>
-        <WorkTitle TitleOne={"Разработка"} TitleTwo={"UI - Дизайн"} />
-        <WorkTitle TitleOne={"Поддержка"} TitleTwo={"Тестирование"} />
-      </div>
-    </div>
+    <PageContainer>
+      <AboutTitle />
+      <Explanation />
+      <WorkTitle TitleTop={"Разработка"} TitleBottom={"UI - Дизайн"} />
+      <WorkTitle TitleTop={"Поддержка"} TitleBottom={"Тестирование"} />
+    </PageContainer>
   );
 }
 
-export default App;
+export default About;
