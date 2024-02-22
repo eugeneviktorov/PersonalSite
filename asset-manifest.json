@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e0ef83a.css",
-    "main.js": "/static/js/main.3ad3df7a.js",
+    "main.css": "/static/css/main.9bfd9450.css",
+    "main.js": "/static/js/main.e2b340ff.js",
     "static/media/Music-service.png": "/static/media/Music-service.0fd07f4444ac6db5ea4c.png",
     "static/media/IP-Viktorova.png": "/static/media/IP-Viktorova.0cd9017ba7aa2e935ed2.png",
     "static/media/Hackathon-School.png": "/static/media/Hackathon-School.819ed5621cd2ecf6db3e.png",
@@ -20,11 +20,11 @@
     "static/media/Figma.svg": "/static/media/Figma.9a1551b2e67f79a6a9c31c724322da29.svg",
     "static/media/Preload.svg": "/static/media/Preload.4e4355f0d01a679da05a5ac87029014a.svg",
     "static/media/Linkedin.svg": "/static/media/Linkedin.2ec91c207afa367cf4b0db8c524c6a3e.svg",
-    "main.4e0ef83a.css.map": "/static/css/main.4e0ef83a.css.map",
-    "main.3ad3df7a.js.map": "/static/js/main.3ad3df7a.js.map"
+    "main.9bfd9450.css.map": "/static/css/main.9bfd9450.css.map",
+    "main.e2b340ff.js.map": "/static/js/main.e2b340ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e0ef83a.css",
-    "static/js/main.3ad3df7a.js"
+    "static/css/main.9bfd9450.css",
+    "static/js/main.e2b340ff.js"
   ]
 }
