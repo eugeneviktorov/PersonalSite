@@ -159,7 +159,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
     transition: max-height 0.5s ease;
     max-height: auto;
     -webkit-tap-highlight-color: transparent;
@@ -258,7 +257,9 @@ a:hover {
 }
 /* Иконка */
 .icon {
-    color: var(--tg-theme-text-color);
+    fill: var(--tg-theme-text-color);
     padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
     width: 20px;
 } 
