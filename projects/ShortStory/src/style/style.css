@@ -37,39 +37,39 @@ a:hover {
     text-decoration: none;
 }
 /* Страница */
-.documents {
+.page {
     margin-bottom: 3em;
     margin-left: auto;
     margin-right: auto;
     width: 98%;
 }
 @media (min-width:768px) {
-    .documents {
+    .page {
         width: 80%;
    }
 }
 @media (min-width:1024px) {
-    .documents {
+    .page {
         width: 65%;
    }
 }
 @media (min-width:1440px) {
-    .documents {
+    .page {
         width: 60%;
    }
 }
 @media (min-width:1920px) {
-    .documents {
+    .page {
         width: 55%;
    }
 }
 @media (min-width:2560px) {
-    .documents {
+    .page {
         width: 50%;
    }
 }
 /* Наименование проекта */
-.nameProject {
+.name {
     color: var(--globalColorWhiteBlue);
     text-align: center;
     margin-top: 2em;
@@ -77,37 +77,37 @@ a:hover {
     font-weight: 900;
 }
 @media (min-width:280px) {
-    .nameProject {
+    .name {
         font-size: 28px;
    }
 }
 @media (min-width:320px) {
-    .nameProject {
+    .name {
         font-size: 32px;
    }
 }
 @media (min-width:425px) {
-    .nameProject {
+    .name {
         font-size: 36px;
    }
 }
 @media (min-width:768px) {
-    .nameProject {
+    .name {
         font-size: 40px;
    }
 }
 @media (min-width:1024px) {
-    .nameProject {
+    .name {
         font-size: 44px;
    }
 }
 @media (min-width:1440px) {
-    .nameProject {
+    .name {
         font-size: 48px;
    }
 }
 /* Наименование страницы */
-.title {
+.about {
     color: var(--tg-theme-text-color);
     font-weight: 900;
     text-align: center;
@@ -122,32 +122,32 @@ a:hover {
    /* Standard */
 }
 @media (min-width:280px) {
-    .title {
+    .about {
         font-size: 20px;
    }
 }
 @media (min-width:320px) {
-    .title {
+    .about {
         font-size: 22px;
    }
 }
 @media (min-width:375px) {
-    .title {
+    .about {
         font-size: 24px;
    }
 }
 @media (min-width:768px) {
-    .title {
+    .about {
         font-size: 26px;
    }
 }
 @media (min-width:2560px) {
-    .title {
+    .about {
         font-size: 32px;
    }
 }
 /* Блок вопроса */
-.faqAndRulesQuestion {
+.meaning {
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     font-weight: 700;
@@ -158,6 +158,8 @@ a:hover {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-between;
     transition: max-height 0.5s ease;
     max-height: auto;
     -webkit-tap-highlight-color: transparent;
@@ -171,31 +173,31 @@ a:hover {
    /* Standard */
 }
 @media (min-width:280px) {
-    .faqAndRulesQuestion {
+    .meaning {
         font-size: 16px;
    }
 }
 @media (min-width:320px) {
-    .faqAndRulesQuestion {
+    .meaning {
         font-size: 18px;
    }
 }
 @media (min-width:375px) {
-    .faqAndRulesQuestion {
+    .meaning {
         font-size: 20px;
    }
 }
 @media (min-width:768px) {
-    .faqAndRulesQuestion {
+    .meaning {
         font-size: 22px;
    }
 }
 @media (min-width:2560px) {
-    .faqAndRulesQuestion {
+    .meaning {
         font-size: 28px;
    }
 }
-.faqAndRulesQuestion.active {
+.meaning.active {
     border-radius: 1em 1em 0em 0em;
 }
 /* Блок ответа */
@@ -254,3 +256,8 @@ a:hover {
     visibility: visible;
     margin-bottom: 2em;
 }
+/* Иконка */
+.icon {
+    color: var(--tg-theme-text-color);
+    width: 20px;
+} 
