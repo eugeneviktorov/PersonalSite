@@ -258,6 +258,9 @@ a:hover {
 }
 /* Иконка */
 .icon {
-    color: var(--tg-theme-text-color);
+    fill: var(--tg-theme-text-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1px;
     width: 20px;
 } 
