@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9bfd9450.css",
-    "main.js": "/static/js/main.e2b340ff.js",
+    "main.js": "/static/js/main.33d364e2.js",
     "static/media/Music-service.png": "/static/media/Music-service.0fd07f4444ac6db5ea4c.png",
     "static/media/IP-Viktorova.png": "/static/media/IP-Viktorova.0cd9017ba7aa2e935ed2.png",
     "static/media/Hackathon-School.png": "/static/media/Hackathon-School.819ed5621cd2ecf6db3e.png",
@@ -21,10 +21,10 @@
     "static/media/Preload.svg": "/static/media/Preload.4e4355f0d01a679da05a5ac87029014a.svg",
     "static/media/Linkedin.svg": "/static/media/Linkedin.2ec91c207afa367cf4b0db8c524c6a3e.svg",
     "main.9bfd9450.css.map": "/static/css/main.9bfd9450.css.map",
-    "main.e2b340ff.js.map": "/static/js/main.e2b340ff.js.map"
+    "main.33d364e2.js.map": "/static/js/main.33d364e2.js.map"
   },
   "entrypoints": [
     "static/css/main.9bfd9450.css",
-    "static/js/main.e2b340ff.js"
+    "static/js/main.33d364e2.js"
   ]
 }
