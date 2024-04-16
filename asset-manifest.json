@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9bfd9450.css",
+    "main.js": "/static/js/main.33d364e2.js",
+    "static/media/Music-service.png": "/static/media/Music-service.0fd07f4444ac6db5ea4c.png",
+    "static/media/IP-Viktorova.png": "/static/media/IP-Viktorova.0cd9017ba7aa2e935ed2.png",
+    "static/media/Hackathon-School.png": "/static/media/Hackathon-School.819ed5621cd2ecf6db3e.png",
+    "static/media/DirectDost.png": "/static/media/DirectDost.c68c56a1757dc5a05980.png",
+    "static/media/IT-Adaptation.png": "/static/media/IT-Adaptation.11586aba0a616b985bb0.png",
+    "static/media/Network-Profile.png": "/static/media/Network-Profile.bb3cf9eed63c99b35641.png",
+    "static/media/SRSHB_bot.png": "/static/media/SRSHB_bot.2fa1501b969431276dbb.png",
+    "static/media/N-Logo.png": "/static/media/N-Logo.87605dab3caeae9f505a.png",
+    "static/media/Nunito-Bold.ttf": "/static/media/Nunito-Bold.275dd55e10ba966bcb9b.ttf",
+    "static/media/YandexPharmaDay.png": "/static/media/YandexPharmaDay.9eee9970ba252bece03d.png",
+    "static/media/ShortStory.png": "/static/media/ShortStory.85e47897705a882c6244.png",
+    "static/media/Dribbble-concept.png": "/static/media/Dribbble-concept.fe7659a2dea450efd997.png",
+    "static/media/Logotype-site.svg": "/static/media/Logotype-site.c38705eb950a550d6c08ba067cdbc9c1.svg",
+    "index.html": "/index.html",
+    "static/media/GitHub.svg": "/static/media/GitHub.fb58c95ab61084433f7b06a4cd662b3d.svg",
+    "static/media/Figma.svg": "/static/media/Figma.9a1551b2e67f79a6a9c31c724322da29.svg",
+    "static/media/Preload.svg": "/static/media/Preload.4e4355f0d01a679da05a5ac87029014a.svg",
+    "static/media/Linkedin.svg": "/static/media/Linkedin.2ec91c207afa367cf4b0db8c524c6a3e.svg",
+    "main.9bfd9450.css.map": "/static/css/main.9bfd9450.css.map",
+    "main.33d364e2.js.map": "/static/js/main.33d364e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bfd9450.css",
+    "static/js/main.33d364e2.js"
+  ]
+}
