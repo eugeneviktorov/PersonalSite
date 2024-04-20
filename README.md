@@ -20,14 +20,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Available scripts
-
-`npm run deploy`
-
-**Build and deploy to GitHub Pages**
-
-This script is designed to build your application and automatically upload it to the `gh-pages` branch of your GitHub repository. Follow this command to quickly deploy your site.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -58,8 +50,6 @@ RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 These rules redirect requests to a secure connection (HTTPS), which is important for the security of your site.
 
 ## List of npm libraries used
-
-`gh-pages`
 
 `emailjs-com`
 
