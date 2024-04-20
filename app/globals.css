@@ -18,6 +18,12 @@
 
   /* Глобальные тени */
   --boxShadow: 0px 0px 10px #00000010;
+
+  /* Глобальный порядок */
+  --zIndexHeader: 1;
+  --zIndexWindow: 2;
+  --zIndexLoading: 10;
+  --zIndexLoadingHide: -1;
 }
 
 /* Основа страницы */

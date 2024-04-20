@@ -7,7 +7,7 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: var(--zIndexHeader);
   -webkit-tap-highlight-color: transparent;
 }
 
