@@ -9,7 +9,12 @@
     -moz-box-sizing: border-box;
     margin-bottom: 1em;
     border-radius: 1em;
-    font-family: Nunito-Bold;
+    font-family: "Nunito-Bold";
+    appearance: none;
+}
+
+.input:disabled {
+    opacity: 1;
 }
 
 .input::placeholder {
@@ -70,7 +75,7 @@
     transition: 0.3s;
     cursor: pointer;
     border-radius: 1em;
-    font-family: Nunito-Bold;
+    font-family: "Nunito-Bold";
 }
 
 .waiting {

@@ -12,7 +12,13 @@ export default function ErrorElement() {
         не найдена
       </div>
       <div className={styles.errorCode}>404</div>
-      <Image src={Logotype} alt="Logotype" className={styles.logotype} />
+      <Image
+        src={Logotype}
+        alt="Logotype"
+        className={styles.logotype}
+        width={100}
+        height={100}
+      />
       <div className={styles.buttonContainer}>
         <Link href="/" className={styles.button}>
           На главную

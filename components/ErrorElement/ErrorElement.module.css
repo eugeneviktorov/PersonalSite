@@ -13,18 +13,17 @@
     font-size: 108px;
 }
 
+.buttonContainer {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .button {
     background: var(--colorBlue);
     color: var(--colorWhite);
     padding: 0.8em 1.5em;
     border-radius: 0.8em;
     transition: 0.5s;
-    margin-top: 5em;
     text-decoration: none;
-}
-
-.buttonContainer {
-    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: 280px) {
@@ -34,6 +33,10 @@
 
     .logotype {
         width: 250px;
+    }
+
+    .buttonContainer {
+        margin-top: 3em;
     }
 
     .button {
@@ -61,6 +64,11 @@
 @media (min-width: 425px) {
     .logotype {
         width: 400px;
+        margin-top: 1em;
+    }
+
+    .buttonContainer {
+        margin-top: 4em;
     }
 
     .button {
@@ -71,6 +79,11 @@
 @media (min-width: 768px) {
     .logotype {
         width: 500px;
+        margin-top: 2em;
+    }
+
+    .buttonContainer {
+        margin-top: 5em;
     }
 }
 

@@ -12,8 +12,9 @@ export default function Footer() {
         </p>
       </div>
       <div className={styles.title}>
-        <p>+7 (913) 684-55-43</p>
-        <p>eviktorovvv@gmail.com</p>
+        <span>+7 (913) 684-55-43</span>
+        <br />
+        <span>eviktorovvv@gmail.com</span>
       </div>
       <div className={styles.title}>
         <Link href="/documentation/terms-of-use">
