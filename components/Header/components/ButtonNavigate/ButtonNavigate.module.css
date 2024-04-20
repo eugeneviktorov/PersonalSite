@@ -1,0 +1,60 @@
+.button {
+    color: var(--colorDarkBlue);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10em;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+@media (min-width: 280px) {
+    .button {
+        padding: 0.2em;
+        font-size: 14px;
+        margin-right: 0.1em;
+    }
+}
+
+@media (min-width: 320px) {
+    .button {
+        padding: 0.4em;
+        font-size: 14px;
+        margin-right: 0.7em;
+    }
+}
+
+@media (min-width: 425px) {
+    .button {
+        padding: 0.5em;
+        font-size: 16px;
+        margin-right: 0.7em;
+    }
+}
+
+@media (min-width: 768px) {
+    .button {
+        font-size: 18px;
+        margin-right: 2em;
+    }
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background: var(--colorBlue);
+        color: var(--colorWhite);
+    }
+
+    .button:active {
+        background: var(--colorDarkBlue);
+        color: var(--colorWhite);
+        transition: 0s;
+    }
+}
+
+@media (hover: none) {
+    .button:active {
+        background: var(--colorDarkBlue);
+        color: var(--colorWhite);
+        transition: 0s;
+    }
+}

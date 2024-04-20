@@ -1,0 +1,11 @@
+@media (min-width: 425px) {
+    .container {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        text-align: left;
+    }
+}

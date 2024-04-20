@@ -1,101 +1,53 @@
-# PersonalSite
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<br>
+## Getting Started
 
-### Содержание
+First, run the development server:
 
-### • [Начало работы](#начало-работы-с-create-react-app)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### • [Настройка файлов](#настройка-файлов-конфигурации-и-кода)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### • [Список библиотек](#список-используемых-npm-библиотек)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-<br><br><br>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-# Начало работы с Create React App
+## Available scripts
 
-Этот проект был создан с помощью [Create React App](https://github.com/facebook/create-react-app).
+`npm run deploy`
 
-## Доступные скрипты
+**Build and deploy to GitHub Pages**
 
-В директории проекта вы можете выполнить следующие команды:
+This script is designed to build your application and automatically upload it to the `gh-pages` branch of your GitHub repository. Follow this command to quickly deploy your site.
 
-### `npm start`
+## Learn More
 
-Запускает приложение в режиме разработки.\
-Откройте [http://localhost:3000](http://localhost:3000), чтобы просмотреть его в браузере.
+To learn more about Next.js, take a look at the following resources:
 
-Страница будет перезагружаться при внесении изменений.\
-Вы также можете увидеть ошибки линтинга в консоли.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### `npm test`
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Запускает тестовый раннер в интерактивном режиме наблюдения.\
-См. раздел о [запуске тестов](https://facebook.github.io/create-react-app/docs/running-tests) для получения дополнительной информации.
+## Deploy on Vercel
 
-### `npm run build`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Собирает приложение для продакшена в папку `build`.\
-Оно правильно объединяет React в режиме продакшена и оптимизирует сборку для достижения наилучшей производительности.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-Сборка минифицируется, и в имена файлов включаются хеши.\
-Ваше приложение готово к развёртыванию!
-
-См. раздел о [развёртывании](https://facebook.github.io/create-react-app/docs/deployment) для получения дополнительной информации.
-
-### `npm run eject`
-
-**Примечание: это односторонняя операция. После выполнения `eject` вы не сможете вернуться обратно!**
-
-Если вам не устраивает инструмент сборки и выбранные настройки, вы можете выполнить `eject` в любой момент. Эта команда удалит зависимость от одной сборки из вашего проекта.
-
-Вместо этого она скопирует все файлы конфигурации и транзитивные зависимости (webpack, Babel, ESLint и т. д.) прямо в ваш проект, так что вы сможете полностью контролировать их. Все команды, кроме `eject`, всё равно будут работать, но они будут ссылаться на скопированные скрипты, так что вы сможете их настраивать. На этом этапе вы остаётесь сам на сам с проектом.
-
-Вам не обязательно использовать `eject`. Состав функций, которые предоставляются по умолчанию, подходит для небольших и средних развёртываний, и вы не должны чувствовать себя обязанными использовать эту функцию. Тем не менее, мы понимаем, что этот инструмент не будет полезен, если вы не сможете настроить его, когда будете готовы к этому.
-
-### `npm run deploy`
-
-**Сборка и развёртывание на GitHub Pages**
-
-Этот скрипт предназначен для сборки вашего приложения и автоматической загрузки его в ветку `gh-pages` вашего репозитория на GitHub. Следуйте этой команде для быстрого развёртывания вашего сайта.
-
-## Узнать больше
-
-Вы можете узнать больше в [документации по Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
-
-Чтобы узнать React, ознакомьтесь с [документацией React](https://reactjs.org/)
-
-### Разделение кода
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Анализ размера пакета
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Создание прогрессивного веб-приложения
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Расширенная конфигурация
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Развёртывание
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### Ошибка минификации при `npm run build`
-
-Этот раздел переехал сюда: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-<br><br><br>
-
-# Настройка файлов конфигурации и кода
+## Setting up configuration files and code
 
 ### `.htaccess`
 
-Если вы предназначаете ваше приложение для размещения на страницах GitHub, а не на обычном хостинге, обязательно настройте файл `.htaccess` в корне проекта добавив следующие правила:
+If you intend your application to be hosted on GitHub pages rather than on regular hosting, be sure to configure the `.htaccess` file in the project root by adding the following rules:
 
 ```
 RewriteEngine On
@@ -103,38 +55,12 @@ RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 ```
 
-Эти правила перенаправляют запросы на безопасное соединение (HTTPS), что важно для безопасности вашего сайта.
+These rules redirect requests to a secure connection (HTTPS), which is important for the security of your site.
 
-### `/src/App.tsx`
+## List of npm libraries used
 
-Перед запуском сборки приложения выберете необходимый вараинт сборки для вас:
+`gh-pages`
 
-**GitHub-pages**
+`emailjs-com`
 
-```
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-```
-
-**Hosting service**
-
-```
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-```
-
-### `/public/404.html`
-
-Этот файл следует использовать только в том случае, если вы разворачиваете ваш сайт на GitHub Pages.
-
-<br><br><br>
-
-# Список используемых npm библиотек
-
-### `gh-pages`
-
-### `emailjs-com`
-
-### `react-input-mask`
-
-### `react-router-dom`
-
-### `styled-components`
+`react-input-mask`

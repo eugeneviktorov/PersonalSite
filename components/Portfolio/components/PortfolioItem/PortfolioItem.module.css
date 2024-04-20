@@ -1,0 +1,122 @@
+.container {
+    background: var(--colorWhite);
+    box-shadow: var(--boxShadow);
+}
+
+.hideImage {
+    border-radius: 1em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.nameContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-tap-highlight-color: initial;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.aboutTitle {
+    color: var(--colorDarkBlue);
+    margin-top: 0.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+@media (min-width: 280px) {
+    .container {
+        padding: 0.5em;
+        display: block;
+        border-radius: 1em;
+        margin-bottom: 2em;
+    }
+
+    .nameContainer {
+        font-size: 22px;
+    }
+
+    .aboutTitle {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        padding: 0.7em;
+        border-radius: 1.5em;
+    }
+
+    .nameContainer {
+        font-size: 24px;
+    }
+
+    .aboutTitle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 44%;
+        display: inline-block;
+        margin-bottom: 2.6em;
+    }
+
+    .container:nth-child(2n) {
+        margin-right: 2.6em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 45%;
+        padding: 0.8em;
+        margin-bottom: 1.3em;
+    }
+
+    .container:nth-child(2n) {
+        margin-right: 1.3em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        margin-bottom: 1.5em;
+    }
+
+    .container:nth-child(2n) {
+        margin-right: 1.5em;
+    }
+}
+
+@media (hover: hover) {
+    .image:hover {
+        scale: 1.1;
+    }
+
+    .image:active {
+        scale: 1.1;
+    }
+}
+
+@media (hover: none) {
+    .image:active {
+        scale: 1.1;
+    }
+}

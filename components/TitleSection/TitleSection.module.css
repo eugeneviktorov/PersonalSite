@@ -1,0 +1,45 @@
+.container {
+    color: var(--colorBlue);
+    margin-bottom: 1em;
+    display: inline-block;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+@media (min-width: 280px) {
+    .container {
+        font-size: 28px;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 320px) {
+    .container {
+        font-size: 30px;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        font-size: 32px;
+        margin-top: 3em;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        font-size: 32px;
+        margin-top: 4em;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        font-size: 32px;
+        margin-top: 5em;
+    }
+}

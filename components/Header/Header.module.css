@@ -1,0 +1,93 @@
+.container {
+  background: var(--colorWhite);
+  box-shadow: var(--boxShadow);
+  border-radius: 0 0 1.5em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logotypeContainer {
+  display: inline-block;
+}
+
+.logotype {
+  pointer-events: none;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+@media (min-width: 280px) {
+  .container {
+    height: 3em;
+  }
+
+  .logotypeContainer {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  .logotype {
+    width: 90px;
+    padding: 0.2em;
+  }
+}
+
+@media (min-width: 320px) {
+  .logotype {
+    width: 100px;
+    padding: 0.4em;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    height: 4em;
+  }
+
+  .logotype {
+    width: 120px;
+    margin-left: 0.6em;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    border-radius: 0 0 2em 2em;
+  }
+
+  .logotypeContainer {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .logotypeContainer {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .logotype {
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .logotype {
+    width: 140px;
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logotype {
+    width: 150px;
+  }
+}

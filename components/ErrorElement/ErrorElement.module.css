@@ -1,0 +1,114 @@
+.container {
+    text-align: center;
+}
+
+.title {
+    color: var(--colorDarkBlue);
+    margin-top: 1em;
+}
+
+.errorCode {
+    color: var(--colorGray);
+    margin-top: 0.2em;
+    font-size: 108px;
+}
+
+.button {
+    background: var(--colorBlue);
+    color: var(--colorWhite);
+    padding: 0.8em 1.5em;
+    border-radius: 0.8em;
+    transition: 0.5s;
+    margin-top: 5em;
+    text-decoration: none;
+}
+
+.buttonContainer {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 280px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .logotype {
+        width: 250px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 320px) {
+    .button {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 375px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .logotype {
+        width: 350px;
+    }
+}
+
+@media (min-width: 425px) {
+    .logotype {
+        width: 400px;
+    }
+
+    .button {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logotype {
+        width: 500px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .title {
+        font-size: 58px;
+    }
+
+    .errorCode {
+        font-size: 152px;
+    }
+
+    .logotype {
+        width: 700px;
+    }
+
+    .button {
+        font-size: 28px;
+    }
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background: var(--colorDarkBlue);
+        color: var(--colorWhite);
+    }
+
+    .button:active {
+        background: var(--colorBlue);
+        color: var(--colorWhite);
+        transition: 0s;
+    }
+}
+
+@media (hover: none) {
+    .button:active {
+        background: var(--colorDarkBlue);
+        color: var(--colorWhite);
+        transition: 0s;
+    }
+}
