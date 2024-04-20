@@ -12,7 +12,7 @@ export default function ContactsSocial({
   return (
     <div className={styles.container}>
       <Link href={link}>
-        <Image src={icon} alt="Logotype" className={styles.icon} />
+        <Image src={icon} alt="Logotype" className={styles.icon} draggable={false}/>
       </Link>
     </div>
   );

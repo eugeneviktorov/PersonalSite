@@ -10,6 +10,7 @@ export default function PortfolioItem({ item }: { item: PortfolioItemType }) {
           src={`/assets/image/${item.image}`}
           alt={item.title}
           className={styles.image}
+          draggable={false}
           width="1920"
           height="1080"
         />
