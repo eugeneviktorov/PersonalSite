@@ -11,11 +11,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.logotypeContainer {
-  display: inline-block;
-}
-
 .logotype {
+  height: auto;
   pointer-events: none;
 }
 
@@ -26,11 +23,6 @@
 @media (min-width: 280px) {
   .container {
     height: 3em;
-  }
-
-  .logotypeContainer {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
   }
 
   .logotype {
@@ -51,9 +43,13 @@
     height: 4em;
   }
 
+  .logotypeContainer {
+    margin-left: 0.6em;
+  }
+
   .logotype {
     width: 120px;
-    margin-left: 0.6em;
+
   }
 }
 
@@ -61,28 +57,16 @@
   .container {
     border-radius: 0 0 2em 2em;
   }
-
-  .logotypeContainer {
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
-  }
 }
 
 @media (min-width: 768px) {
   .logotypeContainer {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-left: 2em;
   }
 
   .logotype {
     padding: 0.5em;
-  }
-}
-
-@media (min-width: 768px) {
-  .logotype {
     width: 140px;
-    margin-left: 2em;
   }
 }
 
