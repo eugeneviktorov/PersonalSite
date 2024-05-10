@@ -67,7 +67,7 @@
     "id": 9,
     "title": "СРШБ бот",
     "description": "Telegram bot для колледжа",
-    "image": "SRSHB_bot.png",
+    "image": "SRSHB_bot_NotWorking.png",
     "link": "https://t.me/srshb_bot",
     "favorite": false
   },
@@ -85,6 +85,14 @@
     "description": "Приложение для университета",
     "image": "DirectDost.png",
     "link": "https://github.com/eugeneviktorov/DirectDost",
+    "favorite": false
+  },
+  {
+    "id": 12,
+    "title": "WINSOYP",
+    "description": "Программа очистки Windows",
+    "image": "WINSOYP.png",
+    "link": "https://github.com/eugeneviktorov/WINSOYP",
     "favorite": true
   }
 ]
