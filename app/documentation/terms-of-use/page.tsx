@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import styles from "../Documentation.module.css";
 import PageView from "@/components/PageView";
 import Loading from "@/components/Loading/loading";
@@ -8,6 +9,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ",
+};
+
+export const viewport: Viewport = {
+  userScalable: false,
 };
 
 export default function TermsOfUse() {
