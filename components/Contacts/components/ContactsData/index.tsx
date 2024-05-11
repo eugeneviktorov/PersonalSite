@@ -27,14 +27,17 @@ export default function ContactsData({
         <ContactsSocial
           link="https://github.com/eugeneviktorov"
           icon={GitHub}
+          alt="GitHub"
         />
         <ContactsSocial
           link="https://www.figma.com/@eugeneviktorov"
           icon={Figma}
+          alt="Figma"
         />
         <ContactsSocial
           link="https://www.linkedin.com/in/eugeneviktorov"
           icon={Linkedin}
+          alt="Linkedin"
         />
       </div>
     </div>

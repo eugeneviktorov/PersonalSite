@@ -4,6 +4,7 @@
 }
 
 .icon {
+    display: block;
     background: var(--colorWhite);
     box-shadow: var(--boxShadow);
     width: auto;
