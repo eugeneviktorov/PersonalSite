@@ -79,3 +79,8 @@ a:hover {
 ul {
   padding-left: 1em;
 }
+
+/* Tab фокус */
+:focus {
+  outline: none;
+}
