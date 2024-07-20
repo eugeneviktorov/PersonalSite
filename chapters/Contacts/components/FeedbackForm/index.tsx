@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import emailjs from "emailjs-com";
 import Link from "next/link";
+import { useState } from "react";
+
 import styles from "./FeedbackForm.module.css";
 import Input from "../Input";
-import emailjs from "emailjs-com";
 
 export default function FeedbackForm({
   serviceId,
@@ -57,6 +58,7 @@ export default function FeedbackForm({
       setButtonDisabled(true);
       try {
         // Получение данных для отправки данных по аккаунту
+        // eslint-disable-next-line import/no-named-as-default-member
         await emailjs.sendForm(serviceId, templateId, e.currentTarget, userId);
 
         // Обновление текста и блокировка кнопки

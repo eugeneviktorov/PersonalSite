@@ -1,11 +1,14 @@
 import Link from "next/link";
-import styles from "./Portfolio.module.css";
+
 import PageContainer from "@/components/PageContainer";
 import TitleSection from "@/components/TitleSection";
+
 import PortfolioItem from "./components/PortfolioItem";
+import styles from "./Portfolio.module.css";
 import { PortfolioItemType } from "./PortfolioItem.types";
 
 export function InitialPortfolio() {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const portfolioItem: PortfolioItemType[] = require("@/public/assets/dataJson/Portfolio.json");
   const portfolioFiltered = portfolioItem.filter((item) => item.favorite);
   return (
@@ -22,6 +25,7 @@ export function InitialPortfolio() {
 }
 
 export function MainPortfolio() {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const portfolioItem: PortfolioItemType[] = require("@/public/assets/dataJson/Portfolio.json");
   return (
     <PageContainer section="portfolio">

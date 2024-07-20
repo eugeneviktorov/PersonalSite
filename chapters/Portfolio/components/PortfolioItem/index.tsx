@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import styles from "./PortfolioItem.module.css";
 import { PortfolioItemType } from "../../PortfolioItem.types";
 

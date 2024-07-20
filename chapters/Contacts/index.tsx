@@ -1,12 +1,13 @@
-import styles from "./Contacts.module.css";
 import PageContainer from "@/components/PageContainer";
 import TitleSection from "@/components/TitleSection";
-import FeedbackForm from "./components/FeedbackForm";
+import Figma from "@/public/assets/icons/Figma.svg";
+import GitHub from "@/public/assets/icons/GitHub.svg";
+import Linkedin from "@/public/assets/icons/Linkedin.svg";
+
 import ContactsData from "./components/ContactsData";
 import ContactsSocial from "./components/ContactsSocial";
-import GitHub from "@/public/assets/icons/GitHub.svg";
-import Figma from "@/public/assets/icons/Figma.svg";
-import Linkedin from "@/public/assets/icons/Linkedin.svg";
+import FeedbackForm from "./components/FeedbackForm";
+import styles from "./Contacts.module.css";
 
 export default function Contacts() {
   return (
