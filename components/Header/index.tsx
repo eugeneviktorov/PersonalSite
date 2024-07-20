@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import Logotype from "@/public/assets/icons/Logotype-site.svg";
+import Logotype from "@/public/assets/icons/Logotype.svg";
 import ButtonNavigate from "./components/ButtonNavigate";
 
 export default function Header({
@@ -14,6 +14,7 @@ export default function Header({
   back?: boolean;
 }) {
   const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logotypeContainer}>

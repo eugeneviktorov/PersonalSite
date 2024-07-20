@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import PageView from "@/components/PageView";
 import Loading from "@/components/Loading/loading";
-import ErrorElement from "@/components/ErrorElement";
+import ErrorContainer from "@/components/ErrorContainer";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function Custom404() {
   return (
     <PageView>
       <Loading />
-      <ErrorElement />
+      <ErrorContainer />
       <Footer />
     </PageView>
   );

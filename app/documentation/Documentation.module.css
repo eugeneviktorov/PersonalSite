@@ -1,21 +1,21 @@
 .title {
-    margin-top: 5em;
-    display: inline-block;
-    white-space: pre-wrap;
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+  margin-top: 5em;
+  display: inline-block;
+  white-space: pre-wrap;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 @media (min-width: 280px) {
-    .title {
-        font-size: 14px;
-    }
+  .title {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 375px) {
-    .title {
-        font-size: 16px;
-    }
+  .title {
+    font-size: 16px;
+  }
 }

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./Loading.module.css";
-import Logo from "@/public/assets/icons/Logo.svg";
+import Logo from "@/public/assets/icons/Icon.svg";
 import { useEffect, useState } from "react";
 
 export default function Loading() {

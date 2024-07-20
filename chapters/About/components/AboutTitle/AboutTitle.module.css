@@ -1,0 +1,56 @@
+.container {
+  color: var(--colorDarkBlue);
+  display: inline-block;
+  margin-top: 2.5em;
+  text-align: left;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.container span {
+  color: var(--colorBlue);
+}
+
+@media (min-width: 280px) {
+  .container {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    font-size: 48px;
+  }
+}

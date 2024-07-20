@@ -1,0 +1,86 @@
+/* Глобальный шрифт */
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("../public/assets/fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+/* Стили */
+:root {
+  /* Глобальные цвета */
+  --colorBackground: #fafafa;
+  --colorWhite: #ffffff;
+  --colorDarkWhite: #f1f1f1;
+  --colorGray: #cecece;
+  --colorDarkGray: #7a7a7a;
+  --colorBlue: #005af5;
+  --colorDarkBlue: #162a4c;
+  --colorBlueSelect: #9bd0ffaf;
+
+  /* Глобальные тени */
+  --boxShadow: 0px 0px 10px #00000010;
+
+  /* Глобальный порядок */
+  --zIndexHeader: 1;
+  --zIndexWindow: 2;
+  --zIndexLoading: 10;
+  --zIndexLoadingHide: -1;
+}
+
+/* Основа страницы */
+html {
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Настройка страницы */
+body {
+  background: var(--colorBackground);
+  overflow: overlay;
+  margin: 0;
+  font-family: "Nunito-Bold";
+}
+
+br {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Выделение текста */
+*::selection {
+  background: var(--colorBlueSelect);
+}
+
+/* Размер скроллбара */
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+/* Стиль скроллбара */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px 0px 0px 20px;
+  background: var(--colorGray);
+}
+
+/* Ссылка */
+a {
+  color: var(--colorBlue);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Список */
+ul {
+  padding-left: 1em;
+}
+
+/* Tab фокус */
+:focus {
+  outline: none;
+}

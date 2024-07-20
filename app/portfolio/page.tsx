@@ -3,7 +3,7 @@ import type { Viewport } from "next";
 import PageView from "@/components/PageView";
 import Loading from "@/components/Loading/loading";
 import Header from "@/components/Header";
-import { MainPortfolio } from "@/components/Portfolio";
+import { MainPortfolio } from "@/chapters/Portfolio";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
