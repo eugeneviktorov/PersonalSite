@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import type { Viewport } from "next";
-import PageView from "@/components/PageView";
-import Loading from "@/components/Loading/loading";
-import Header from "@/components/Header";
+import type { Metadata , Viewport } from "next";
+
 import About from "@/chapters/About";
-import { InitialPortfolio } from "@/chapters/Portfolio";
 import Contacts from "@/chapters/Contacts";
+import { InitialPortfolio } from "@/chapters/Portfolio";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Loading from "@/components/Loading/loading";
+import PageView from "@/components/PageView";
 
 export const metadata: Metadata = {
   title: "Викторов",

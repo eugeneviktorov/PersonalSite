@@ -1,14 +1,17 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
-import styles from "./Header.module.css";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+
+import { useIsMobileQuery } from "@/hooks/useIsMobileQuery";
 import Logotype from "@/public/assets/icons/Logotype.svg";
 import Menu from "@/public/assets/icons/Menu.svg";
-import { useEffect, useState } from "react";
-import MenuRight from "./components/MenuRight";
-import { useIsMobileQuery } from "@/hooks/useIsMobileQuery";
+
 import ButtonNavigate from "./components/ButtonNavigate";
+import MenuRight from "./components/MenuRight";
+import styles from "./Header.module.css";
+
 
 export default function Header({
   main,

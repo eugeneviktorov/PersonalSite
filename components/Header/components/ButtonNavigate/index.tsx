@@ -1,6 +1,7 @@
 "use client";
-import { MouseEventHandler } from "react";
 import Link from "next/link";
+import { MouseEventHandler } from "react";
+
 import styles from "./ButtonNavigate.module.css";
 
 export default function ButtonNavigate({

@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import type { Viewport } from "next";
-import PageView from "@/components/PageView";
-import Loading from "@/components/Loading/loading";
+import type { Metadata , Viewport } from "next";
+
 import ErrorContainer from "@/components/ErrorContainer";
 import Footer from "@/components/Footer";
+import Loading from "@/components/Loading/loading";
+import PageView from "@/components/PageView";
 
 export const metadata: Metadata = {
   title: "404",

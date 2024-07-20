@@ -58,3 +58,17 @@ These rules redirect requests to a secure connection (HTTPS), which is important
 `emailjs-com`
 
 `react-input-mask`
+
+## Eslint commands
+
+Error checking:
+
+```
+npm run lint
+```
+
+Error correction
+
+```
+npm run lint -- --fix
+```

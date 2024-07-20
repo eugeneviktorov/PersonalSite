@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
-import styles from "./Loading.module.css";
-import Logo from "@/public/assets/icons/Icon.svg";
 import { useEffect, useState } from "react";
+
+import Logo from "@/public/assets/icons/Icon.svg";
+
+import styles from "./Loading.module.css";
 
 export default function Loading() {
   const [loading, setLoading] = useState(false);

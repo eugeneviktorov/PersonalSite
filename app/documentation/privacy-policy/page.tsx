@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
-import type { Viewport } from "next";
-import styles from "../Documentation.module.css";
-import PageView from "@/components/PageView";
-import Loading from "@/components/Loading/loading";
-import Header from "@/components/Header";
-import PageContainer from "@/components/PageContainer";
+import type { Metadata , Viewport } from "next";
+
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Loading from "@/components/Loading/loading";
+import PageContainer from "@/components/PageContainer";
+import PageView from "@/components/PageView";
+
+import styles from "../Documentation.module.css";
 
 export const metadata: Metadata = {
   title: "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",

@@ -1,9 +1,11 @@
-import { ReactNode, useEffect } from "react";
-import styles from "./MenuRight.module.css";
-import Link from "next/link";
 import Image from "next/image";
-import Logotype from "@/public/assets/icons/Logotype.svg";
+import Link from "next/link";
+import { ReactNode, useEffect } from "react";
+
 import Close from "@/public/assets/icons/Close.svg";
+import Logotype from "@/public/assets/icons/Logotype.svg";
+
+import styles from "./MenuRight.module.css";
 
 export default function MenuRight({
   isOpen,
