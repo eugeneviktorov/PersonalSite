@@ -77,7 +77,7 @@
     "description": "Telegram bot коротких историй",
     "image": "ShortStory.png",
     "link": "https://t.me/ShortStoryyBot",
-    "favorite": true
+    "favorite": false
   },
   {
     "id": 11,
@@ -89,6 +89,14 @@
   },
   {
     "id": 12,
+    "title": "ГОСАПТЕКА55",
+    "description": "Мобильное приложение сети аптек",
+    "image": "Gosapteka55.png",
+    "link": "https://play.google.com/store/apps/details?id=com.bonushub.app",
+    "favorite": true
+  },
+  {
+    "id": 13,
     "title": "WINSOYP",
     "description": "Программа очистки Windows",
     "image": "WINSOYP.png",
