@@ -75,7 +75,7 @@
     "id": 9,
     "title": "СРШБ бот",
     "description": "Telegram bot для колледжа",
-    "image": "SRSHB_bot_NotWorking.png",
+    "image": "SRSHB_bot.png",
     "link": "https://t.me/srshb_bot",
     "favorite": false,
     "notWorking": true
@@ -113,6 +113,15 @@
     "description": "Программа очистки Windows",
     "image": "WINSOYP.png",
     "link": "https://github.com/eugeneviktorov/WINSOYP",
+    "favorite": false,
+    "notWorking": false
+  },
+  {
+    "id": 14,
+    "title": "pwa-on-nextjs-template",
+    "description": "PWA шаблон для сайта",
+    "image": "PWA-Template.png",
+    "link": "https://github.com/eugeneviktorov/pwa-on-nextjs-template",
     "favorite": true,
     "notWorking": false
   }
