@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 import { useRouter } from "next/navigation";
 import Logotype from "@/public/assets/icons/Logotype.svg";
 import Menu from "@/public/assets/icons/Menu.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuRight from "./components/MenuRight";
 import { useIsMobileQuery } from "@/hooks/useIsMobileQuery";
 import ButtonNavigate from "./components/ButtonNavigate";
@@ -18,8 +18,13 @@ export default function Header({
   back?: boolean;
 }) {
   const router = useRouter();
-  const isMobile = useIsMobileQuery();
+  const isMobileQuery = useIsMobileQuery();
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
 
   return isMobile ? (
     <>
