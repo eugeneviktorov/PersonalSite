@@ -4,4 +4,5 @@ export interface PortfolioItemType {
   image: string;
   description: string;
   favorite: boolean;
+  notWorking: boolean;
 }

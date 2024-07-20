@@ -5,7 +5,8 @@
     "description": "Лендинг ИТ компании",
     "image": "IT-Adaptation.png",
     "link": "https://it-adapt.ru",
-    "favorite": true
+    "favorite": true,
+    "notWorking": false
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Лендинг ИП, бухгалтерских услуг",
     "image": "IP-Viktorova.png",
     "link": "projects/IP-Viktorova/index.html",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Лендинг дня фармацевтики",
     "image": "YandexPharmaDay.png",
     "link": "projects/YandexPharmaDay/index.html",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "Лендинг профиля социальной сети",
     "image": "Network-Profile.png",
     "link": "projects/Network-Profile/index.html",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "Макет мобильного приложения",
     "image": "Music-service.png",
     "link": "https://www.figma.com/community/file/1113393200185818580/Music-service",
-    "favorite": true
+    "favorite": true,
+    "notWorking": false
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "Макет сайта, справочник",
     "image": "Hackathon-School.png",
     "link": "https://www.figma.com/community/file/1166069552938719525",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Архив шотов с Dribbble",
     "image": "Dribbble-concept.png",
     "link": "projects/Dribbble-concept/index.html",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "Логитип буквы N",
     "image": "N-Logo.png",
     "link": "https://www.figma.com/community/file/1154827765025781172/n-logo",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "Telegram bot для колледжа",
     "image": "SRSHB_bot_NotWorking.png",
     "link": "https://t.me/srshb_bot",
-    "favorite": false
+    "favorite": false,
+    "notWorking": true
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "Telegram bot коротких историй",
     "image": "ShortStory.png",
     "link": "https://t.me/ShortStoryyBot",
-    "favorite": false
+    "favorite": false,
+    "notWorking": true
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "description": "Приложение для университета",
     "image": "DirectDost.png",
     "link": "https://github.com/eugeneviktorov/DirectDost",
-    "favorite": false
+    "favorite": false,
+    "notWorking": false
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "description": "Мобильное приложение сети аптек",
     "image": "Gosapteka55.png",
     "link": "https://play.google.com/store/apps/details?id=com.bonushub.app",
-    "favorite": true
+    "favorite": true,
+    "notWorking": false
   },
   {
     "id": 13,
@@ -101,6 +113,7 @@
     "description": "Программа очистки Windows",
     "image": "WINSOYP.png",
     "link": "https://github.com/eugeneviktorov/WINSOYP",
-    "favorite": true
+    "favorite": true,
+    "notWorking": false
   }
 ]

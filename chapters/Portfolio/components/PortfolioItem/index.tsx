@@ -14,6 +14,13 @@ export default function PortfolioItem({ item }: { item: PortfolioItemType }) {
           width="1920"
           height="1080"
         />
+        {item.notWorking && (
+          <div className={styles.notWorking}>
+            <div className={styles.notWorkingTitle}>
+              НЕДОСТУПНО В ДАННЫЙ МОМЕНТ
+            </div>
+          </div>
+        )}
       </a>
       <div className={styles.nameContainer}>
         <a href={item.link}>{item.title}</a>
