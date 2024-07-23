@@ -12,7 +12,6 @@ import ButtonNavigate from "./components/ButtonNavigate";
 import MenuRight from "./components/MenuRight";
 import styles from "./Header.module.css";
 
-
 export default function Header({
   main,
   back,
@@ -39,7 +38,7 @@ export default function Header({
           <Image
             src={Menu}
             alt="Menu"
-            className={styles.iconButton}
+            className={styles.icon}
             onClick={() => setMobileMenuOpen(true)}
           />
         )}

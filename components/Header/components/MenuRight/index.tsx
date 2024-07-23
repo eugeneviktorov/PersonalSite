@@ -22,10 +22,7 @@ export default function MenuRight({
     } else {
       document.body.style.overflow = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+  });
 
   return (
     <div className={styles.test}>
@@ -38,7 +35,7 @@ export default function MenuRight({
           <Image
             src={Close}
             alt="Close"
-            className={styles.iconButton}
+            className={styles.icon}
             onClick={onClose}
           />
         </div>
