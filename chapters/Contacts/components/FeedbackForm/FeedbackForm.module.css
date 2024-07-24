@@ -76,6 +76,7 @@
   cursor: pointer;
   border-radius: 1em;
   font-family: "Nunito-Bold";
+  font-weight: normal;
 }
 
 .waiting {
