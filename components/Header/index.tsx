@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { useIsMobileQuery } from "@/hooks/useIsMobileQuery";
 import Logotype from "@/public/assets/icons/Logotype.svg";
@@ -20,13 +20,8 @@ export default function Header({
   back?: boolean;
 }) {
   const router = useRouter();
-  const isMobileQuery = useIsMobileQuery();
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const isMobile = useIsMobileQuery();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(isMobileQuery);
-  }, [isMobileQuery]);
 
   return isMobile ? (
     <>
