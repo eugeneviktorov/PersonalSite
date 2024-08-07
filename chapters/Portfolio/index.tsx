@@ -29,7 +29,7 @@ export function MainPortfolio() {
   const portfolioItem: PortfolioItemType[] = require("@/public/assets/dataJson/Portfolio.json");
   return (
     <PageContainer section="portfolio">
-      <TitleSection text="Портфолио" />
+      <TitleSection text="Портфолио" style={{ marginTop: "1em" }} />
       {portfolioItem.map((item, index) => (
         <PortfolioItem key={index} item={item} />
       ))}

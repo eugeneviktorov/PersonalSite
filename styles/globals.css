@@ -55,15 +55,20 @@ br {
   background: var(--colorBlueSelect);
 }
 
-/* Размер скроллбара */
-::-webkit-scrollbar {
-  width: 0.7em;
-}
+/* Стилизация скролбара */
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-/* Стиль скроллбара */
-::-webkit-scrollbar-thumb {
-  border-radius: 20px 0px 0px 20px;
-  background: var(--colorGray);
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px 0px 0px 20px;
+    background: var(--colorGray);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--colorDarkGray);
+  }
 }
 
 /* Ссылка */

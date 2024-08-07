@@ -1,10 +1,10 @@
-import type { Metadata , Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 
 import { MainPortfolio } from "@/chapters/Portfolio";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Loading from "@/components/Loading/loading";
 import PageView from "@/components/PageView";
+import PageWrapper from "@/components/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Портфолио",
@@ -18,9 +18,10 @@ export default function Portfolio() {
   return (
     <PageView>
       <Loading />
-      <Header back />
-      <MainPortfolio />
-      <Footer />
+      <PageWrapper headerBack>
+        <MainPortfolio />
+        <Footer />
+      </PageWrapper>
     </PageView>
   );
 }

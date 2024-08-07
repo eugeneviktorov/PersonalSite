@@ -1,10 +1,10 @@
-import type { Metadata , Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Loading from "@/components/Loading/loading";
 import PageContainer from "@/components/PageContainer";
 import PageView from "@/components/PageView";
+import PageWrapper from "@/components/PageWrapper";
 
 import styles from "../Documentation.module.css";
 
@@ -20,10 +20,10 @@ export default function PrivacyPolicy() {
   return (
     <PageView>
       <Loading />
-      <Header back />
-      <PageContainer>
-        <div className={styles.title}>
-          {`
+      <PageWrapper headerBack>
+        <PageContainer>
+          <div className={styles.title}>
+            {`
 ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
 Россия, Омск, «21» февраля 2024г.
   
@@ -100,9 +100,10 @@ export default function PrivacyPolicy() {
 8.2. Изменения Политики конфиденциальности вступают в силу с момента их размещения на Сайте.
 8.3. Действующая Политика конфиденциальности размещена на Сайте по адресу https://viktorovvv.ru/documentation/privacy-policy.
         `}
-        </div>
-      </PageContainer>
-      <Footer />
+          </div>
+        </PageContainer>
+        <Footer />
+      </PageWrapper>
     </PageView>
   );
 }

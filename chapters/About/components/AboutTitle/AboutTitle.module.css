@@ -1,7 +1,7 @@
 .container {
   color: var(--colorDarkBlue);
   display: inline-block;
-  margin-top: 2.5em;
+  margin-top: 1em;
   text-align: left;
   -webkit-user-select: text;
   -moz-user-select: text;

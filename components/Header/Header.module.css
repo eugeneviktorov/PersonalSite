@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   width: 100%;
   z-index: var(--zIndexHeader);
   -webkit-tap-highlight-color: transparent;
@@ -38,12 +37,6 @@
 }
 
 @media (max-width: 1024px) {
-  .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
   .content {
     display: flex;
     align-items: center;
@@ -54,6 +47,10 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    border-radius: 0 0 15px 15px;
+  }
+
   .logotype {
     height: 40px;
   }
@@ -64,6 +61,10 @@
 }
 
 @media (max-width: 375px) {
+  .container {
+    border-radius: 0 0 10px 10px;
+  }
+
   .logotype {
     height: 30px;
     padding: 10px 10px;
