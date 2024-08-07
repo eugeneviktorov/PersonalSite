@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gapStandart);
 }
 
 @media (max-width: 768px) {

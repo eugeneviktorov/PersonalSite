@@ -24,6 +24,9 @@
   --borderRadiusStandart: 15px;
   --borderRadiusBig: 25px;
 
+  /* Глобальные отступы */
+  --gapStandart: 20px;
+
   /* Временные значения */
   --transitionNull: 0ms;
   --transitionSmall: 300ms;
