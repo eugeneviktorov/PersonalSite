@@ -22,7 +22,7 @@
   color: var(--colorWhite);
   padding: 0.8em 1.5em;
   border-radius: var(--borderRadiusSmall);
-  transition: 0.5s;
+  transition: var(--transitionStandart);
   text-decoration: none;
 }
 
@@ -114,7 +114,7 @@
   .button:active {
     background: var(--colorBlue);
     color: var(--colorWhite);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }
 
@@ -122,6 +122,6 @@
   .button:active {
     background: var(--colorDarkBlue);
     color: var(--colorWhite);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }

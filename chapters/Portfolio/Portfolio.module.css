@@ -5,7 +5,7 @@
   padding: 0.9em 1.3em;
   display: inline-block;
   border-radius: var(--borderRadiusStandart);
-  transition: 0.5s;
+  transition: var(--transitionStandart);
 }
 
 @media (min-width: 280px) {
@@ -45,13 +45,13 @@
 
   .button:active {
     background: var(--colorBlue);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }
 
 @media (hover: none) {
   .button:active {
     background: var(--colorDarkBlue);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }

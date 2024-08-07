@@ -10,7 +10,7 @@
   width: auto;
   height: auto;
   padding: 0.5em;
-  transition: 0.2s;
+  transition: var(--transitionSmall);
 }
 
 @media (min-width: 280px) {

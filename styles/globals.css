@@ -24,6 +24,11 @@
   --borderRadiusStandart: 15px;
   --borderRadiusBig: 25px;
 
+  /* Временные значения */
+  --transitionNull: 0ms;
+  --transitionSmall: 300ms;
+  --transitionStandart: 500ms;
+
   /* Глобальный порядок */
   --zIndexHeader: 1;
   --zIndexWindow: 2;

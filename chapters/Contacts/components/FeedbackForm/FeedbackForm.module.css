@@ -49,7 +49,7 @@
   float: right;
   line-height: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: var(--transitionSmall);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -72,7 +72,7 @@
   outline: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  transition: 0.3s;
+  transition: var(--transitionSmall);
   cursor: pointer;
   border-radius: var(--borderRadiusStandart);
   font-family: "Nunito-Bold";
@@ -165,13 +165,13 @@
 
   .button:active {
     background: var(--colorBlue);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }
 
 @media (hover: none) {
   .button:active {
     background: var(--colorDarkBlue);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }

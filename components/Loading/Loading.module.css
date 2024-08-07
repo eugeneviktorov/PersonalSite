@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: var(--transitionStandart);
   z-index: var(--zIndexLoading);
 }
 

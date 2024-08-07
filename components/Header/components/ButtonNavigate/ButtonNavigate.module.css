@@ -3,7 +3,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: var(--borderRadiusBig);
-  transition: 0.7s;
+  transition: var(--transitionStandart);
   cursor: pointer;
 }
 
@@ -47,7 +47,7 @@
   .button:active {
     background: var(--colorDarkBlue);
     color: var(--colorWhite);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }
 
@@ -55,6 +55,6 @@
   .button:active {
     background: var(--colorDarkBlue);
     color: var(--colorWhite);
-    transition: 0s;
+    transition: var(--transitionNull);
   }
 }
