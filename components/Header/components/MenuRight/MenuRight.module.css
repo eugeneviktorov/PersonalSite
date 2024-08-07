@@ -6,7 +6,7 @@
   height: 100%;
   background: var(--colorBackground);
   transition: var(--transitionStandart);
-  z-index: 10;
+  z-index: var(--zIndexWindow);
 }
 
 .container {
