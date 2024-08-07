@@ -1,7 +1,7 @@
 .container {
   background: var(--colorWhite);
   box-shadow: var(--boxShadow);
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 var(--borderRadiusBig) var(--borderRadiusBig);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,7 @@
 
 @media (max-width: 768px) {
   .container {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 var(--borderRadiusStandart) var(--borderRadiusStandart);
   }
 
   .logotype {
@@ -62,7 +62,7 @@
 
 @media (max-width: 375px) {
   .container {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--borderRadiusSmall) var(--borderRadiusSmall);
   }
 
   .logotype {

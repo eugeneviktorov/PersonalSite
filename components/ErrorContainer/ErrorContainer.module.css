@@ -21,7 +21,7 @@
   background: var(--colorBlue);
   color: var(--colorWhite);
   padding: 0.8em 1.5em;
-  border-radius: 0.8em;
+  border-radius: var(--borderRadiusSmall);
   transition: 0.5s;
   text-decoration: none;
 }

@@ -19,6 +19,11 @@
   /* Глобальные тени */
   --boxShadow: 0px 0px 10px #00000010;
 
+  /* Глобальные радиусы */
+  --borderRadiusSmall: 10px;
+  --borderRadiusStandart: 15px;
+  --borderRadiusBig: 25px;
+
   /* Глобальный порядок */
   --zIndexHeader: 1;
   --zIndexWindow: 2;
@@ -62,7 +67,7 @@ br {
   }
 
   ::-webkit-scrollbar-thumb {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: var(--borderRadiusBig) 0px 0px var(--borderRadiusBig);
     background: var(--colorGray);
   }
 

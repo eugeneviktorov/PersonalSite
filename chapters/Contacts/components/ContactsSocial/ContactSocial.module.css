@@ -16,14 +16,14 @@
 @media (min-width: 280px) {
   .icon {
     width: 40px;
-    border-radius: 0.8em;
+    border-radius: var(--borderRadiusSmall);
   }
 }
 
 @media (min-width: 320px) {
   .icon {
     width: 50px;
-    border-radius: 1em;
+    border-radius: var(--borderRadiusStandart);
   }
 }
 

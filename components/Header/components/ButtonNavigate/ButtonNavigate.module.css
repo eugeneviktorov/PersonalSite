@@ -2,7 +2,7 @@
   color: var(--colorDarkBlue);
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 10em;
+  border-radius: var(--borderRadiusBig);
   transition: 0.7s;
   cursor: pointer;
 }
