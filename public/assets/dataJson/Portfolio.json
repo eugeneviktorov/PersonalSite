@@ -10,28 +10,28 @@
   },
   {
     "id": 2,
-    "title": "ИП Викторова",
-    "description": "Лендинг ИП, бухгалтерских услуг",
-    "image": "IP-Viktorova.png",
-    "link": "projects/IP-Viktorova/index.html",
-    "favorite": false,
+    "title": "ООО Инфометеос",
+    "description": "Рекламный лендинг компании",
+    "image": "Infometeos.png",
+    "link": "https://promo.info-meteos.ru/",
+    "favorite": true,
     "notWorking": false
   },
   {
     "id": 3,
-    "title": "YandexPharmaDay",
-    "description": "Лендинг дня фармацевтики",
-    "image": "YandexPharmaDay.png",
-    "link": "projects/YandexPharmaDay/index.html",
+    "title": "Network Profile",
+    "description": "Лендинг профиля социальной сети",
+    "image": "Network-Profile.png",
+    "link": "https://github.com/eugeneviktorov/Network-Profile",
     "favorite": false,
     "notWorking": false
   },
   {
     "id": 4,
-    "title": "Network Profile",
-    "description": "Лендинг профиля социальной сети",
-    "image": "Network-Profile.png",
-    "link": "projects/Network-Profile/index.html",
+    "title": "N-Logo",
+    "description": "Логитип буквы N",
+    "image": "N-Logo.png",
+    "link": "https://www.figma.com/community/file/1154827765025781172/n-logo",
     "favorite": false,
     "notWorking": false
   },
@@ -41,7 +41,7 @@
     "description": "Макет мобильного приложения",
     "image": "Music-service.png",
     "link": "https://www.figma.com/community/file/1113393200185818580/Music-service",
-    "favorite": true,
+    "favorite": false,
     "notWorking": false
   },
   {
@@ -55,24 +55,6 @@
   },
   {
     "id": 7,
-    "title": "Dribbble-concept",
-    "description": "Архив шотов с Dribbble",
-    "image": "Dribbble-concept.png",
-    "link": "projects/Dribbble-concept/index.html",
-    "favorite": false,
-    "notWorking": false
-  },
-  {
-    "id": 8,
-    "title": "N-Logo",
-    "description": "Логитип буквы N",
-    "image": "N-Logo.png",
-    "link": "https://www.figma.com/community/file/1154827765025781172/n-logo",
-    "favorite": false,
-    "notWorking": false
-  },
-  {
-    "id": 9,
     "title": "СРШБ бот",
     "description": "Telegram bot для колледжа",
     "image": "SRSHB_bot.png",
@@ -81,7 +63,7 @@
     "notWorking": true
   },
   {
-    "id": 10,
+    "id": 8,
     "title": "ShortStory",
     "description": "Telegram bot коротких историй",
     "image": "ShortStory.png",
@@ -90,7 +72,7 @@
     "notWorking": true
   },
   {
-    "id": 11,
+    "id": 9,
     "title": "DirectDost",
     "description": "Приложение для университета",
     "image": "DirectDost.png",
@@ -99,7 +81,7 @@
     "notWorking": false
   },
   {
-    "id": 12,
+    "id": 10,
     "title": "ГОСАПТЕКА55",
     "description": "Мобильное приложение сети аптек",
     "image": "Gosapteka55.png",
@@ -108,7 +90,7 @@
     "notWorking": false
   },
   {
-    "id": 13,
+    "id": 11,
     "title": "WINSOYP",
     "description": "Программа очистки Windows",
     "image": "WINSOYP.png",
@@ -117,7 +99,7 @@
     "notWorking": false
   },
   {
-    "id": 14,
+    "id": 12,
     "title": "pwa-on-nextjs-template",
     "description": "PWA шаблон для сайта",
     "image": "PWA-Template.png",
