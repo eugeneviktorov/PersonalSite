@@ -13,10 +13,8 @@ export default function ContactsSocial({
   alt: string;
 }) {
   return (
-    <div className={styles.container}>
-      <Link href={link}>
-        <Image src={icon} alt={alt} className={styles.icon} draggable={false} />
-      </Link>
-    </div>
+    <Link href={link} className={styles.container}>
+      <Image src={icon} alt={alt} className={styles.icon} draggable={false} />
+    </Link>
   );
 }

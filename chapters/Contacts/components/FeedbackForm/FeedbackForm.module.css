@@ -28,7 +28,7 @@
 .alert {
   background: var(--colorDarkWhite);
   color: var(--colorDarkGray);
-  padding: 10px 20px 10px 20px;
+  padding: var(--paddingSmall) var(--paddingBig);
   margin-bottom: 1em;
   border-radius: var(--borderRadiusStandart);
   display: none;
@@ -108,7 +108,7 @@
 
   .input {
     font-size: 16px;
-    padding: 1em;
+    padding: var(--paddingStandart);
     width: 100%;
   }
 
@@ -119,7 +119,7 @@
 
   .button {
     font-size: 16px;
-    padding: 1em;
+    padding: var(--paddingStandart);
     width: 100%;
   }
 

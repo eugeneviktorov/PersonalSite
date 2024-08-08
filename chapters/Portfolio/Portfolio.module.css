@@ -2,7 +2,7 @@
   background: var(--colorBlue);
   color: var(--colorWhite);
   text-decoration: none;
-  padding: 0.9em 1.3em;
+  padding: var(--paddingStandart) var(--paddingBig);
   display: inline-block;
   border-radius: var(--borderRadiusStandart);
   transition: var(--transitionStandart);

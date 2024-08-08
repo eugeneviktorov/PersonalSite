@@ -9,7 +9,7 @@
   box-shadow: var(--boxShadow);
   width: auto;
   height: auto;
-  padding: 0.5em;
+  padding: var(--paddingSmall);
   transition: var(--transitionSmall);
 }
 

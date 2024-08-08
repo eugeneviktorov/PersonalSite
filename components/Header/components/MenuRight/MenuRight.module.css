@@ -34,14 +34,14 @@
   width: auto;
   height: 50px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: var(--paddingSmall) var(--paddingBig);
 }
 
 .icon {
   width: 30px;
   height: auto;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: var(--paddingSmall) var(--paddingBig);
 }
 
 .content {
@@ -75,10 +75,10 @@
 
   .logotype {
     height: 30px;
-    padding: 10px 10px;
+    padding: var(--paddingSmall);
   }
 
   .icon {
-    padding: 10px 10px;
+    padding: var(--paddingSmall);
   }
 }

@@ -24,6 +24,17 @@
   --borderRadiusStandart: 15px;
   --borderRadiusBig: 25px;
 
+  /* Глобальные padding */
+  --paddingSmall: 10px;
+  --paddingStandart: 15px;
+  --paddingBig: 20px;
+  /* Глобальные padding для портфолио */
+  --paddingPortfolioItemSmall: 0.5em;
+  --paddingPortfolioItemStandart: 0.7em;
+  --paddingPortfolioItemBig: 0.8em;
+  /* Глобальные padding для ul */
+  --paddingUl: 1em;
+
   /* Глобальные отступы */
   --gapStandart: 20px;
 
@@ -95,7 +106,7 @@ a:hover {
 
 /* Список */
 ul {
-  padding-left: 1em;
+  padding-left: var(--paddingUl);
 }
 
 /* Tab фокус */

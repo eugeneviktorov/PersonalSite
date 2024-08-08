@@ -20,7 +20,7 @@
 .button {
   background: var(--colorBlue);
   color: var(--colorWhite);
-  padding: 0.8em 1.5em;
+  padding: var(--paddingStandart) var(--paddingBig);
   border-radius: var(--borderRadiusSmall);
   transition: var(--transitionStandart);
   text-decoration: none;

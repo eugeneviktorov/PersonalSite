@@ -14,7 +14,7 @@
   width: auto;
   height: 50px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: var(--paddingSmall) var(--paddingBig);
 }
 
 .content {
@@ -25,7 +25,7 @@
   width: 30px;
   height: auto;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: var(--paddingSmall) var(--paddingBig);
 }
 
 .link {
@@ -67,11 +67,11 @@
 
   .logotype {
     height: 30px;
-    padding: 10px 10px;
+    padding: var(--paddingSmall);
   }
 
   .icon {
     width: 20px;
-    padding: 10px 10px;
+    padding: var(--paddingSmall);
   }
 }
