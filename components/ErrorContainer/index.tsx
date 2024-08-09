@@ -5,7 +5,6 @@ import Logotype from "@/public/assets/icons/Logotype.svg";
 
 import styles from "./ErrorContainer.module.css";
 
-
 export default function ErrorContainer() {
   return (
     <div className={styles.container}>

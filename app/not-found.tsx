@@ -1,4 +1,4 @@
-import type { Metadata , Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 
 import ErrorContainer from "@/components/ErrorContainer";
 import Footer from "@/components/Footer";
