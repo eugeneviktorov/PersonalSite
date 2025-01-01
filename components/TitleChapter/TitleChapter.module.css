@@ -1,6 +1,5 @@
 .container {
   color: var(--color-main);
-  display: inline-block;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;

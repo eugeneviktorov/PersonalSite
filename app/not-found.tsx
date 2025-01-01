@@ -20,7 +20,7 @@ export default function Custom404() {
     <PageView>
       <Loading />
       <div className={styles.container}>
-        <div className={styles.errorContainer}>
+        <div className={styles.content}>
           <div className={styles.title}>
             Страница
             <br />

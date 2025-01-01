@@ -16,9 +16,9 @@
 }
 
 .dot {
+  border-radius: 100%;
   width: var(--spacing-s);
   height: var(--spacing-s);
-  border-radius: 100%;
   background: var(--color-dark-main);
 }
 
