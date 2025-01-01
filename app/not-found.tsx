@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import Footer from "@/components/Footer";
-import Loading from "@/components/Loading/loading";
+import Loading from "@/components/Loading";
 import Logotype from "@/components/Logotype";
 import PageView from "@/components/PageView";
 

@@ -4,7 +4,7 @@ import About from "@/chapters/About";
 import Contacts from "@/chapters/Contacts";
 import { InitialPortfolio } from "@/chapters/Portfolio";
 import Footer from "@/components/Footer";
-import Loading from "@/components/Loading/loading";
+import Loading from "@/components/Loading";
 import PageView from "@/components/PageView";
 import PageWrapper from "@/components/PageWrapper";
 

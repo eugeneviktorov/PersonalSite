@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import Footer from "@/components/Footer";
-import Loading from "@/components/Loading/loading";
+import Loading from "@/components/Loading";
 import PageChapter from "@/components/PageChapter";
 import PageView from "@/components/PageView";
 import PageWrapper from "@/components/PageWrapper";
