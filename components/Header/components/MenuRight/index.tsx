@@ -17,16 +17,20 @@ export default function MenuRight({
 }) {
   return (
     <div className={isOpen ? styles.containerOpen : styles.container}>
-      <div className={styles.header}>
-        <Logotype />
-        <Image
-          src={Close}
-          alt="Close"
-          className={styles.icon}
-          onClick={onClose}
-        />
+      <div className={styles.page}>
+        <div className={styles.header}>
+          <Logotype />
+          <Image
+            src={Close}
+            alt="Close"
+            className={styles.icon}
+            onClick={onClose}
+          />
+        </div>
+        <div className={styles.content}>
+          <div className={styles.links}>{children}</div>
+        </div>
       </div>
-      <div className={styles.content}>{children}</div>
     </div>
   );
 }

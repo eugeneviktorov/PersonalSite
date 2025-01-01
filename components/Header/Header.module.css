@@ -26,9 +26,13 @@
 .link {
   font-size: 28px;
   color: var(--color-dark-main);
+  border-radius: var(--spacing-m);
+  padding: var(--spacing-xs) var(--spacing-s);
+  transition: var(--transition-small);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -48,5 +52,25 @@
 @media (max-width: 375px) {
   .icon {
     width: var(--spacing-l);
+  }
+}
+
+@media (hover: hover) {
+  .link:hover {
+    color: var(--color-white);
+    background: var(--color-dark-main);
+  }
+
+  .link:active {
+    background: var(--color-main);
+    transition: var(--transition-null);
+  }
+}
+
+@media (hover: none) {
+  .link:active {
+    color: var(--color-white);
+    background: var(--color-main);
+    transition: var(--transition-null);
   }
 }
