@@ -1,15 +1,21 @@
+import PageChapter from "@/components/PageChapter";
+
+import styles from "./About.module.css";
 import AboutTitle from "./components/AboutTitle";
-import Explanation from "./components/Explanation";
+import ExplanationTitle from "./components/ExplanationTitle";
 import WorkTitle from "./components/WorkTitle";
-import PageContainer from "../../components/PageContainer";
 
 export default function About() {
   return (
-    <PageContainer>
-      <AboutTitle />
-      <Explanation />
-      <WorkTitle titleTop="Разработка" titleBottom="UI - Дизайн" />
-      <WorkTitle titleTop="Поддержка" titleBottom="Тестирование" />
-    </PageContainer>
+    <PageChapter>
+      <div className={styles.container}>
+        <AboutTitle />
+        <ExplanationTitle />
+        <div className={styles.workTitle}>
+          <WorkTitle top="Разработка" bottom="UI - Дизайн" />
+          <WorkTitle top="Поддержка" bottom="Тестирование" />
+        </div>
+      </div>
+    </PageChapter>
   );
 }

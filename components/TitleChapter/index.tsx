@@ -1,8 +1,8 @@
 import { CSSProperties } from "react";
 
-import styles from "./TitleSection.module.css";
+import styles from "./TitleChapter.module.css";
 
-export default function TitleSection({
+export default function TitleChapter({
   text,
   style,
 }: {

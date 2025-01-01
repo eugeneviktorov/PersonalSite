@@ -1,10 +1,13 @@
 "use client";
 import emailjs from "emailjs-com";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import Close from "@/public/assets/images/Close.svg";
+
+import Input from "./components/Input";
 import styles from "./FeedbackForm.module.css";
-import Input from "../Input";
 
 export default function FeedbackForm({
   serviceId,
@@ -131,87 +134,92 @@ export default function FeedbackForm({
   };
 
   return (
-    <div className={styles.container}>
-      <form id="form" onSubmit={handleSubmit}>
-        {/* Поле ввода имени */}
-        <Input
-          inputMode="text"
-          named="from_name"
-          className={`${styles.input} ${
-            inputErrors.fromName ? styles.isNotValid : "none"
-          }`}
-          placeholder="Ваше имя"
-          value={fromName}
-          onChange={handleFromNameChange}
-          disabled={formDisabled}
-        />
-        {/* Поле ввода эл.почты */}
-        <Input
-          inputMode="email"
-          named="email_id"
-          className={`${styles.input} ${
-            inputErrors.email ? styles.isNotValid : "none"
-          }`}
-          placeholder="example@email.com"
-          value={email}
-          onChange={handleEmailChange}
-          disabled={formDisabled}
-        />
-        {/* Поле ввода номера телефона */}
-        <Input
-          inputMode="tel"
-          named="tel_number"
-          className={`${styles.input} ${
-            inputErrors.telNumber ? styles.isNotValid : "none"
-          }`}
-          placeholder="+7 (___) ___-__-__"
-          value={telNumber}
-          onChange={handleTelNumberChange}
-          id="tel_number"
-          mask="+7 (999) 999-99-99"
-          maskChar="_"
-          onMouseDown={handleMouseDown}
-          disabled={formDisabled}
-        />
-        {/* Уведомление некорректного ввода данных */}
-        <div
-          className={`${styles.alert} ${
-            alertVisible ? styles.visible : styles.none
-          }`}
-        >
-          <span onClick={() => setAlertVisible(false)}>&times;</span>
-          Некорректный ввод имени, эл.почты или номера телефона
+    <form id="form" onSubmit={handleSubmit} className={styles.container}>
+      {/* Поле ввода имени */}
+      <Input
+        inputMode="text"
+        named="from_name"
+        className={`${styles.input} ${
+          inputErrors.fromName ? styles.isNotValid : "none"
+        }`}
+        placeholder="Ваше имя"
+        value={fromName}
+        onChange={handleFromNameChange}
+        disabled={formDisabled}
+      />
+      {/* Поле ввода эл.почты */}
+      <Input
+        inputMode="email"
+        named="email_id"
+        className={`${styles.input} ${
+          inputErrors.email ? styles.isNotValid : "none"
+        }`}
+        placeholder="example@email.com"
+        value={email}
+        onChange={handleEmailChange}
+        disabled={formDisabled}
+      />
+      {/* Поле ввода номера телефона */}
+      <Input
+        inputMode="tel"
+        named="tel_number"
+        className={`${styles.input} ${
+          inputErrors.telNumber ? styles.isNotValid : "none"
+        }`}
+        placeholder="+7 (___) ___-__-__"
+        value={telNumber}
+        onChange={handleTelNumberChange}
+        id="tel_number"
+        mask="+7 (999) 999-99-99"
+        maskChar="_"
+        onMouseDown={handleMouseDown}
+        disabled={formDisabled}
+      />
+      {/* Уведомление некорректного ввода данных */}
+      {alertVisible && (
+        <div className={styles.alert}>
+          <div className={styles.alertTitle}>
+            Некорректный ввод имени, эл.почты или номера телефона
+          </div>
+          <div className={styles.closeButton}>
+            <Image
+              src={Close}
+              alt="Close"
+              className={styles.icon}
+              onClick={() => setAlertVisible(false)}
+            />
+          </div>
         </div>
-        {/* Кнопка отправки данных */}
-        <button
-          type="submit"
-          id="send-button"
-          className={`${styles.button} ${
-            buttonDisabled ? styles.waiting : "none"
-          } ${
-            !initialValidation ||
-            (!inputErrors.fromName &&
-              !inputErrors.email &&
-              !inputErrors.telNumber)
-              ? "none"
-              : styles.notAllowed
-          }
+      )}
+      {/* Кнопка отправки данных */}
+      <button
+        type="submit"
+        id="send-button"
+        className={`${styles.button} ${
+          buttonDisabled ? styles.waiting : "none"
+        } ${
+          !initialValidation ||
+          (!inputErrors.fromName &&
+            !inputErrors.email &&
+            !inputErrors.telNumber)
+            ? "none"
+            : styles.notAllowed
+        }
             ${buttonText === "Заявка принята!" ? "success" : "none"}`}
-          onMouseEnter={() => setInitialValidation(false)}
-          disabled={buttonDisabled || formDisabled}
-          style={buttonDisabled ? { cursor: "not-allowed" } : {}}
-        >
-          {formDisabled ? "ВРЕМЕННО НЕ РАБОТАЕТ" : buttonText}
-        </button>
-        {/* Документация обработки данных */}
-        <div className={styles.confidentiality}>
-          Нажимая «Отправить», вы подтверждаете{" "}
-          <Link href="documentation/privacy-policy">
-            политику конфиденциальности
-          </Link>{" "}
-          и даёте согласие на обработку персональных данных
-        </div>
-      </form>
-    </div>
+        onMouseEnter={() => setInitialValidation(false)}
+        disabled={buttonDisabled || formDisabled}
+        style={buttonDisabled ? { cursor: "not-allowed" } : {}}
+      >
+        {formDisabled ? "ВРЕМЕННО НЕ РАБОТАЕТ" : buttonText}
+      </button>
+      {/* Документация обработки данных */}
+      <div className={styles.confidentiality}>
+        Нажимая «Отправить», вы подтверждаете{" "}
+        <Link href="documentation/privacy-policy">
+          политику конфиденциальности
+        </Link>{" "}
+        и даёте согласие на обработку персональных данных
+      </div>
+    </form>
   );
 }

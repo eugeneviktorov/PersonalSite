@@ -1,0 +1,19 @@
+.logotype {
+  width: 120px;
+  height: auto;
+  padding: var(--spacing-l);
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .logotype {
+    width: 130px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logotype {
+    padding: var(--spacing-s);
+  }
+}

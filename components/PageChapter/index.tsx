@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-import styles from "./PageContainer.module.css";
+import styles from "./PageChapter.module.css";
 
-export default function PageContainer({
+export default function PageChapter({
   section,
   children,
 }: {

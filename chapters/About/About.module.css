@@ -1,0 +1,28 @@
+.container,
+.workTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 280px) {
+  .container {
+    gap: var(--spacing-xl);
+  }
+
+  .workTitle {
+    gap: var(--spacing-xxl);
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    gap: var(--spacing-xxl);
+  }
+}
+
+@media (min-width: 768px) {
+  .workTitle {
+    flex-direction: row;
+    gap: var(--spacing-xxxl);
+  }
+}

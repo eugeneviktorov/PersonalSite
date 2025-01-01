@@ -1,6 +1,5 @@
 .container {
-  color: var(--colorDarkGray);
-  margin-top: 1.5em;
+  color: var(--color-gray);
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;

@@ -1,58 +1,54 @@
 .button {
-  color: var(--colorDarkBlue);
+  padding: var(--spacing-s);
+  color: var(--color-dark-main);
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: var(--borderRadiusBig);
-  transition: var(--transitionStandart);
+  border-radius: var(--spacing-xl);
+  transition: var(--transition-standart);
   cursor: pointer;
 }
 
 @media (min-width: 280px) {
   .button {
-    padding: var(--paddingSmall);
     font-size: 14px;
-    margin-right: 0.1em;
   }
 }
 
 @media (min-width: 320px) {
   .button {
     font-size: 14px;
-    margin-right: 0.7em;
   }
 }
 
 @media (min-width: 425px) {
   .button {
     font-size: 16px;
-    margin-right: 0.7em;
   }
 }
 
 @media (min-width: 768px) {
   .button {
     font-size: 18px;
-    margin-right: 2em;
   }
 }
 
 @media (hover: hover) {
   .button:hover {
-    background: var(--colorBlue);
-    color: var(--colorWhite);
+    color: var(--color-white);
+    background: var(--color-main);
   }
 
   .button:active {
-    background: var(--colorDarkBlue);
-    color: var(--colorWhite);
-    transition: var(--transitionNull);
+    color: var(--color-white);
+    background: var(--color-dark-main);
+    transition: var(--transition-null);
   }
 }
 
 @media (hover: none) {
   .button:active {
-    background: var(--colorDarkBlue);
-    color: var(--colorWhite);
-    transition: var(--transitionNull);
+    color: var(--color-white);
+    background: var(--color-dark-main);
+    transition: var(--transition-null);
   }
 }

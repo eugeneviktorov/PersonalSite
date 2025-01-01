@@ -1,7 +1,6 @@
 .container {
-  color: var(--colorDarkBlue);
+  color: var(--color-dark-main);
   display: inline-block;
-  margin-top: 1em;
   text-align: left;
   -webkit-user-select: text;
   -moz-user-select: text;
@@ -10,7 +9,7 @@
 }
 
 .container span {
-  color: var(--colorBlue);
+  color: var(--color-main);
 }
 
 @media (min-width: 280px) {

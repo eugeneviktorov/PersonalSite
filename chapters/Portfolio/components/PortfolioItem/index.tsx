@@ -1,32 +1,32 @@
 import Image from "next/image";
 
 import styles from "./PortfolioItem.module.css";
-import { PortfolioItemType } from "../../PortfolioItem.types";
+import { IPortfolioItem } from "../../PortfolioItem.types";
 
-export default function PortfolioItem({ item }: { item: PortfolioItemType }) {
+export default function PortfolioItem({ item }: { item: IPortfolioItem }) {
   return (
     <div className={styles.container}>
-      <a href={item.link} className={styles.hideImage}>
+      <a href={item.link} className={styles.imageContainer}>
         <Image
-          src={`/assets/images/${item.image}`}
+          src={`/assets/portfolio/images/${item.image}`}
           alt={item.title}
           className={styles.image}
           draggable={false}
-          width="1920"
-          height="1080"
+          width={1920}
+          height={1080}
         />
-        {item.notWorking && (
-          <div className={styles.notWorking}>
-            <div className={styles.notWorkingTitle}>
+        {item.working && (
+          <div className={styles.working}>
+            <div className={styles.workingTitle}>
               НЕДОСТУПНО В ДАННЫЙ МОМЕНТ
             </div>
           </div>
         )}
       </a>
-      <div className={styles.nameContainer}>
-        <a href={item.link}>{item.title}</a>
-      </div>
-      <div className={styles.aboutTitle}>{item.description}</div>
+      <a href={item.link} className={styles.title}>
+        {item.title}
+      </a>
+      <div className={styles.description}>{item.description}</div>
     </div>
   );
 }

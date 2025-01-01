@@ -6,48 +6,40 @@
 
 /* Стили */
 :root {
-  /* Глобальные цвета */
-  --colorBackground: #fafafa;
-  --colorWhite: #ffffff;
-  --colorDarkWhite: #f1f1f1;
-  --colorGray: #cecece;
-  --colorDarkGray: #7a7a7a;
-  --colorBlue: #005af5;
-  --colorDarkBlue: #162a4c;
-  --colorBlueSelect: #9bd0ffaf;
+  /* Цвета */
+  --color-white: #ffffff;
+  --color-dark-white: #fafafa;
+  --color-gray: #b2b2b2;
+  --color-main: #005af5;
+  --color-dark-main: #162a4c;
+  --color-main-select: #9bd0ffaf;
+  --color-blur: rgba(0, 0, 0, 0.8);
 
-  /* Глобальные тени */
-  --boxShadow: 0px 0px 10px #00000010;
+  /* Тени */
+  --box-shadow: 0px 0px 10px #00000010;
 
-  /* Глобальные радиусы */
-  --borderRadiusSmall: 10px;
-  --borderRadiusStandart: 15px;
-  --borderRadiusBig: 25px;
-
-  /* Глобальные padding */
-  --paddingSmall: 10px;
-  --paddingStandart: 15px;
-  --paddingBig: 20px;
-  /* Глобальные padding для портфолио */
-  --paddingPortfolioItemSmall: 0.5em;
-  --paddingPortfolioItemStandart: 0.7em;
-  --paddingPortfolioItemBig: 0.8em;
-  /* Глобальные padding для ul */
-  --paddingUl: 1em;
-
-  /* Глобальные отступы */
-  --gapStandart: 20px;
+  /* Размеры */
+  --spacing-xs: 5px;
+  --spacing-s: 10px;
+  --spacing-m: 15px;
+  --spacing-l: 20px;
+  --spacing-xl: 25px;
+  --spacing-xxl: 40px;
+  --spacing-xxxl: 100px;
 
   /* Временные значения */
-  --transitionNull: 0ms;
-  --transitionSmall: 300ms;
-  --transitionStandart: 500ms;
+  --transition-null: 0ms;
+  --transition-small: 300ms;
+  --transition-standart: 500ms;
 
-  /* Глобальный порядок */
-  --zIndexHeader: 1;
-  --zIndexWindow: 2;
-  --zIndexLoading: 10;
-  --zIndexLoadingHide: -1;
+  /* Порядок */
+  --z-index-header: 1;
+  --z-index-window: 2;
+  --z-index-loading: 10;
+  --z-index-loading-hide: -1;
+
+  /* Шрифт */
+  --font-family-main: "Nunito-Bold";
 }
 
 /* Основа страницы */
@@ -61,10 +53,9 @@ html {
 
 /* Настройка страницы */
 body {
-  background: var(--colorBackground);
+  background: var(--color-dark-white);
   overflow: overlay;
-  margin: 0;
-  font-family: "Nunito-Bold";
+  font-family: var(--font-family-main);
 }
 
 br {
@@ -76,7 +67,7 @@ br {
 
 /* Выделение текста */
 *::selection {
-  background: var(--colorBlueSelect);
+  background: var(--color-main-select);
 }
 
 /* Стилизация скролбара */
@@ -86,27 +77,22 @@ br {
   }
 
   ::-webkit-scrollbar-thumb {
-    border-radius: var(--borderRadiusBig) 0px 0px var(--borderRadiusBig);
-    background: var(--colorGray);
+    border-radius: var(--spacing-xl) 0px 0px var(--spacing-xl);
+    background: var(--color-gray);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--colorDarkGray);
+    background: var(--color-main);
   }
 }
 
 /* Ссылка */
 a {
-  color: var(--colorBlue);
+  color: var(--color-main);
 }
 
 a:hover {
   text-decoration: none;
-}
-
-/* Список */
-ul {
-  padding-left: var(--paddingUl);
 }
 
 /* Tab фокус */

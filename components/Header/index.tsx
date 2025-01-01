@@ -5,12 +5,12 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import { useIsMobileQuery } from "@/hooks/useIsMobileQuery";
-import Logotype from "@/public/assets/icons/Logotype.svg";
-import Menu from "@/public/assets/icons/Menu.svg";
+import Menu from "@/public/assets/images/Menu.svg";
 
 import ButtonNavigate from "./components/ButtonNavigate";
 import MenuRight from "./components/MenuRight";
 import styles from "./Header.module.css";
+import Logotype from "../Logotype";
 
 export default function Header({
   main,
@@ -26,9 +26,7 @@ export default function Header({
   return isMobile ? (
     <>
       <div className={styles.container}>
-        <Link href="/">
-          <Image src={Logotype} alt="Logotype" className={styles.logotype} />
-        </Link>
+        <Logotype />
         {main && (
           <Image
             src={Menu}
@@ -38,12 +36,12 @@ export default function Header({
           />
         )}
         {back && (
-          <div className={styles.buttonContainer}>
+          <div className={styles.buttonNavigateContainer}>
             <ButtonNavigate title="Назад" onClick={router.back} />
           </div>
         )}
         {!main && !back && (
-          <div className={styles.buttonContainer}>
+          <div className={styles.buttonNavigateContainer}>
             <ButtonNavigate title="главная" link="/" />
           </div>
         )}
@@ -70,17 +68,23 @@ export default function Header({
     </>
   ) : (
     <div className={styles.container}>
-      <Link href="/" className={styles.logotypeContainer}>
-        <Image src={Logotype} alt="Logotype" className={styles.logotype} />
-      </Link>
+      <Logotype />
       {main && (
-        <div>
+        <div className={styles.buttonNavigateContainer}>
           <ButtonNavigate title="работы" link="#portfolio" />
           <ButtonNavigate title="контакты" link="#contacts" />
         </div>
       )}
-      {back && <ButtonNavigate title="Назад" onClick={router.back} />}
-      {!main && !back && <ButtonNavigate title="главная" link="/" />}
+      {back && (
+        <div className={styles.buttonNavigateContainer}>
+          <ButtonNavigate title="Назад" onClick={router.back} />
+        </div>
+      )}
+      {!main && !back && (
+        <div className={styles.buttonNavigateContainer}>
+          <ButtonNavigate title="главная" link="/" />
+        </div>
+      )}
     </div>
   );
 }

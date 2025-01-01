@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 
 import About from "@/chapters/About";
 import Contacts from "@/chapters/Contacts";
@@ -8,12 +8,13 @@ import Loading from "@/components/Loading/loading";
 import PageView from "@/components/PageView";
 import PageWrapper from "@/components/PageWrapper";
 
+import styles from "./Page.module.css";
+
 export const metadata: Metadata = {
   title: "Викторов",
-};
-
-export const viewport: Viewport = {
-  userScalable: false,
+  viewport: {
+    userScalable: false,
+  },
 };
 
 export default function Page() {
@@ -21,10 +22,12 @@ export default function Page() {
     <PageView>
       <Loading />
       <PageWrapper headerMain>
-        <About />
-        <InitialPortfolio />
-        <Contacts />
-        <Footer />
+        <div className={styles.container}>
+          <About />
+          <InitialPortfolio />
+          <Contacts />
+          <Footer />
+        </div>
       </PageWrapper>
     </PageView>
   );

@@ -4,27 +4,9 @@
   gap: var(--spacing-xxxl);
 }
 
-.content {
-  white-space: pre-wrap;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
 @media (min-width: 280px) {
   .container {
     margin: var(--spacing-xl) 0;
-  }
-
-  .content {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 375px) {
-  .content {
-    font-size: 16px;
   }
 }
 

@@ -1,11 +1,18 @@
-@media (min-width: 425px) {
-  .container {
-    text-align: center;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
 }
 
 @media (min-width: 768px) {
-  .container {
-    text-align: left;
+  .content {
+    flex-direction: row;
+    gap: var(--spacing-xxxl);
   }
 }

@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 
 import { MainPortfolio } from "@/chapters/Portfolio";
 import Footer from "@/components/Footer";
@@ -6,12 +6,13 @@ import Loading from "@/components/Loading/loading";
 import PageView from "@/components/PageView";
 import PageWrapper from "@/components/PageWrapper";
 
+import styles from "../Page.module.css";
+
 export const metadata: Metadata = {
   title: "Портфолио",
-};
-
-export const viewport: Viewport = {
-  userScalable: false,
+  viewport: {
+    userScalable: false,
+  },
 };
 
 export default function Portfolio() {
@@ -19,8 +20,10 @@ export default function Portfolio() {
     <PageView>
       <Loading />
       <PageWrapper headerBack>
-        <MainPortfolio />
-        <Footer />
+        <div className={styles.container}>
+          <MainPortfolio />
+          <Footer />
+        </div>
       </PageWrapper>
     </PageView>
   );

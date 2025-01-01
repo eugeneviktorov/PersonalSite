@@ -12,18 +12,18 @@ export default function ContactsData({
   name: string;
   number: string;
   email: string;
-  children: ReactNode;
+  children?: ReactNode;
 }) {
   return (
     <div className={styles.container}>
       <div className={styles.name}>{name}</div>
-      <div className={styles.contactsContainer}>
+      <div className={styles.contact}>
         <Link href={`tel: ${number}`}>{number}</Link>
       </div>
-      <div className={styles.contactsContainer}>
+      <div className={styles.contact}>
         <Link href={`mailto:${email}`}>{email}</Link>
       </div>
-      <div className={styles.contactsSocialContainer}>{children}</div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 }

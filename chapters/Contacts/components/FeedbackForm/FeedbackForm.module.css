@@ -1,16 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+
 .input {
-  background-clip: padding-box;
-  color: var(--colorDarkBlue);
-  background: var(--colorWhite);
-  box-shadow: var(--boxShadow);
+  color: var(--color-dark-main);
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-m);
+  border-radius: var(--spacing-m);
   border: none;
   outline: none;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin-bottom: 1em;
-  border-radius: var(--borderRadiusStandart);
-  font-family: "Nunito-Bold";
   appearance: none;
+  font-family: var(--font-family-main);
 }
 
 .input:disabled {
@@ -18,82 +21,68 @@
 }
 
 .input::placeholder {
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .isNotValid {
-  border: 3px solid var(--colorBlue);
+  border: 3px solid var(--color-main);
 }
 
 .alert {
-  background: var(--colorDarkWhite);
-  color: var(--colorDarkGray);
-  padding: var(--paddingSmall) var(--paddingBig);
-  margin-bottom: 1em;
-  border-radius: var(--borderRadiusStandart);
-  display: none;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  display: flex;
+  gap: var(--spacing-xl);
+  color: var(--color-gray);
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-s);
+  border-radius: var(--spacing-m);
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  animation: alert 0.7s ease forwards;
 }
 
-.alert span {
-  color: var(--colorDarkGray);
-  margin-left: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  float: right;
-  line-height: 20px;
+.closeButton {
+  display: flex;
   cursor: pointer;
-  transition: var(--transitionSmall);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  height: fit-content;
+  padding: var(--spacing-xs);
 }
 
-.alert span:hover {
-  color: var(--colorBlue);
-}
-
-.visible {
-  display: block;
+.icon {
+  width: 12px;
+  height: fit-content;
 }
 
 .button {
-  background: var(--colorBlue);
-  color: var(--colorWhite);
-  box-shadow: var(--boxShadow);
+  color: var(--color-white);
+  background: var(--color-main);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-m);
+  border-radius: var(--spacing-m);
+  transition: var(--transition-small);
+  font-family: var(--font-family-main);
   border: none;
   outline: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  transition: var(--transitionSmall);
   cursor: pointer;
-  border-radius: var(--borderRadiusStandart);
-  font-family: "Nunito-Bold";
   font-weight: normal;
 }
 
 .waiting {
-  background: var(--colorDarkGray);
+  background: var(--color-gray);
   cursor: wait;
 }
 
 .notAllowed {
-  background: var(--colorDarkGray);
+  background: var(--color-gray);
   cursor: not-allowed;
 }
 
 .confidentiality {
-  color: var(--colorDarkBlue);
-  margin-top: 1em;
-  width: 100%;
   font-size: 14px;
+  color: var(--color-dark-main);
   -webkit-tap-highlight-color: initial;
   -webkit-user-select: text;
   -moz-user-select: text;
@@ -102,25 +91,10 @@
 }
 
 @media (min-width: 280px) {
-  .container {
-    width: 100%;
-  }
-
-  .input {
-    font-size: 16px;
-    padding: var(--paddingStandart);
-    width: 100%;
-  }
-
-  .alert {
-    width: 100%;
-    font-size: 14px;
-  }
-
+  .input,
+  .alert,
   .button {
-    font-size: 16px;
-    padding: var(--paddingStandart);
-    width: 100%;
+    font-size: 14px;
   }
 
   .confidentiality {
@@ -128,50 +102,34 @@
   }
 }
 
-@media (min-width: 375px) {
-  .alert {
-    font-size: 16px;
-    text-align: left;
-  }
-}
-
 @media (min-width: 425px) {
-  .container {
-    width: 90%;
-    display: inline-block;
+  .input,
+  .alert,
+  .button {
+    font-size: 16px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 45%;
-  }
-
   .confidentiality {
     text-align: left;
   }
 }
 
-@media (min-width: 2560px) {
-  .alert span {
-    font-size: 34px;
-  }
-}
-
 @media (hover: hover) {
   .button:hover {
-    background: var(--colorDarkBlue);
+    background: var(--color-dark-main);
   }
 
   .button:active {
-    background: var(--colorBlue);
-    transition: var(--transitionNull);
+    background: var(--color-main);
+    transition: var(--transition-null);
   }
 }
 
 @media (hover: none) {
   .button:active {
-    background: var(--colorDarkBlue);
-    transition: var(--transitionNull);
+    background: var(--color-dark-main);
+    transition: var(--transition-null);
   }
 }

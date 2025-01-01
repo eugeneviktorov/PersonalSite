@@ -1,20 +1,22 @@
 import styles from "./WorkTitle.module.css";
 
 export default function WorkTitle({
-  titleTop,
-  titleBottom,
+  top,
+  bottom,
 }: {
-  titleTop: string;
-  titleBottom: string;
+  top: string;
+  bottom: string;
 }) {
   return (
     <div className={styles.container}>
-      <ul>
-        <li>{titleTop}</li>
-      </ul>
-      <ul>
-        <li>{titleBottom}</li>
-      </ul>
+      <div className={styles.item}>
+        <div className={styles.dot} />
+        <div className={styles.title}>{top}</div>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.dot} />
+        <div className={styles.title}>{bottom}</div>
+      </div>
     </div>
   );
 }

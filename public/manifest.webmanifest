@@ -1,8 +1,8 @@
 {
   "name": "Викторов",
   "description": "Разработка организованных цифровых решений",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "display": "browser",
   "start_url": "/",
   "prefer_related_applications": true,

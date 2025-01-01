@@ -6,7 +6,7 @@
     "image": "IT-Adaptation.png",
     "link": "https://it-adapt.ru",
     "favorite": true,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 2,
@@ -15,16 +15,16 @@
     "image": "Infometeos.png",
     "link": "https://promo.info-meteos.ru/",
     "favorite": true,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 3,
     "title": "Network Profile",
-    "description": "Лендинг профиля социальной сети",
+    "description": "Лендинг профиля соц.сети",
     "image": "Network-Profile.png",
     "link": "https://github.com/eugeneviktorov/Network-Profile",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "image": "N-Logo.png",
     "link": "https://www.figma.com/community/file/1154827765025781172/n-logo",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "image": "Music-service.png",
     "link": "https://www.figma.com/community/file/1113393200185818580/Music-service",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "image": "Hackathon-School.png",
     "link": "https://www.figma.com/community/file/1166069552938719525",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "image": "SRSHB_bot.png",
     "link": "https://t.me/srshb_bot",
     "favorite": false,
-    "notWorking": true
+    "working": true
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "image": "ShortStory.png",
     "link": "https://t.me/ShortStoryyBot",
     "favorite": false,
-    "notWorking": true
+    "working": true
   },
   {
     "id": 9,
@@ -78,16 +78,16 @@
     "image": "DirectDost.png",
     "link": "https://github.com/eugeneviktorov/DirectDost",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 10,
     "title": "Госаптека55",
-    "description": "Мобильное приложение сети аптек",
+    "description": "Приложение сети аптек",
     "image": "Gosapteka55.png",
-    "link": "https://apps.apple.com/ru/app/%D0%B3%D0%BE%D1%81%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B055/id6630013443",
+    "link": "https://xn--55-6kcann9a3aksn.xn--p1ai/app.htm",
     "favorite": true,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "image": "WINSOYP.png",
     "link": "https://github.com/eugeneviktorov/WINSOYP",
     "favorite": false,
-    "notWorking": false
+    "working": false
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "image": "PWA-Template.png",
     "link": "https://github.com/eugeneviktorov/pwa-on-nextjs-template",
     "favorite": true,
-    "notWorking": false
+    "working": false
   }
 ]

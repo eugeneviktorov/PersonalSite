@@ -1,52 +1,40 @@
 .container {
-  display: inline-block;
-  margin: 0.5em;
+  display: flex;
+  padding: var(--spacing-s);
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--spacing-m);
+  transition: var(--transition-small);
 }
 
 .icon {
-  display: block;
-  background: var(--colorWhite);
-  box-shadow: var(--boxShadow);
-  width: auto;
   height: auto;
-  padding: var(--paddingSmall);
-  transition: var(--transitionSmall);
 }
 
 @media (min-width: 280px) {
   .icon {
-    width: 40px;
-    border-radius: var(--borderRadiusSmall);
+    width: 35px;
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
   .icon {
-    width: 50px;
-    border-radius: var(--borderRadiusStandart);
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    margin: 0;
-    margin-top: 1em;
-    margin-right: 1em;
+    width: 40px;
   }
 }
 
 @media (hover: hover) {
-  .icon:hover {
+  .container:hover {
     scale: 1.1;
   }
 
-  .icon:active {
+  .container:active {
     scale: 1.1;
   }
 }
 
 @media (hover: none) {
-  .icon:active {
+  .container:active {
     scale: 1.1;
   }
 }

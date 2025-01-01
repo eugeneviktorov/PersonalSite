@@ -1,8 +1,8 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 
 import Footer from "@/components/Footer";
 import Loading from "@/components/Loading/loading";
-import PageContainer from "@/components/PageContainer";
+import PageChapter from "@/components/PageChapter";
 import PageView from "@/components/PageView";
 import PageWrapper from "@/components/PageWrapper";
 
@@ -10,10 +10,9 @@ import styles from "../Documentation.module.css";
 
 export const metadata: Metadata = {
   title: "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ",
-};
-
-export const viewport: Viewport = {
-  userScalable: false,
+  viewport: {
+    userScalable: false,
+  },
 };
 
 export default function TermsOfUse() {
@@ -21,9 +20,10 @@ export default function TermsOfUse() {
     <PageView>
       <Loading />
       <PageWrapper headerBack>
-        <PageContainer>
-          <div className={styles.title}>
-            {`
+        <div className={styles.container}>
+          <PageChapter>
+            <div className={styles.content}>
+              {`
 ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
 Россия, Омск, «21» февраля 2024г.
   
@@ -111,9 +111,10 @@ export default function TermsOfUse() {
 8.2. Отзывы и вопросы Пользователя, размещенные на Сайте, не являются конфиденциальной информацией и могут быть использованы Администрацией Сайта.
 8.3. Действующее Пользовательское соглашение размещена на Сайте по адресу https://viktorovvv.ru/documentation/terms-of-use.
         `}
-          </div>
-        </PageContainer>
-        <Footer />
+            </div>
+          </PageChapter>
+          <Footer />
+        </div>
       </PageWrapper>
     </PageView>
   );

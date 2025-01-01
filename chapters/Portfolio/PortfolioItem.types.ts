@@ -1,8 +1,8 @@
-export interface PortfolioItemType {
+export interface IPortfolioItem {
   title: string;
   link: string;
   image: string;
   description: string;
   favorite: boolean;
-  notWorking: boolean;
+  working: boolean;
 }

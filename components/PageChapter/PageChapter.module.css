@@ -16,13 +16,13 @@
   }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 525px) {
   .container {
     width: 80%;
   }
 }
 
-@media (min-width: 620px) {
+@media (min-width: 625px) {
   .container {
     width: 70%;
   }

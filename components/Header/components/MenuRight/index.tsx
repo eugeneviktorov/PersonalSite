@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ReactNode } from "react";
 
-import Close from "@/public/assets/icons/Close.svg";
-import Logotype from "@/public/assets/icons/Logotype.svg";
+import Logotype from "@/components/Logotype";
+import Close from "@/public/assets/images/Close.svg";
 
 import styles from "./MenuRight.module.css";
 
@@ -19,9 +18,7 @@ export default function MenuRight({
   return (
     <div className={isOpen ? styles.containerOpen : styles.container}>
       <div className={styles.header}>
-        <Link href="/">
-          <Image src={Logotype} alt="Logotype" className={styles.logotype} />
-        </Link>
+        <Logotype />
         <Image
           src={Close}
           alt="Close"

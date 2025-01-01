@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import Logo from "@/public/assets/icons/Icon.svg";
+import Icon from "@/public/favicons/favicon.svg";
 
 import styles from "./Loading.module.css";
 
@@ -34,7 +34,7 @@ export default function Loading() {
         loading ? styles.invisible : styles.none
       }`}
     >
-      <Image src={Logo} alt="Logo" className={styles.logo} />
+      <Image src={Icon} alt="icon" className={styles.icon} />
     </div>
   );
 }

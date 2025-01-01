@@ -13,7 +13,7 @@ export default function PageWrapper({
   children: ReactNode | ReactNode[];
 }) {
   return (
-    <div className={styles.page}>
+    <div className={styles.container}>
       <Header main={headerMain} back={headerBack} />
       <div className={styles.content}>{children}</div>
     </div>
