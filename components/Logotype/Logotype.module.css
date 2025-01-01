@@ -1,3 +1,7 @@
+.container {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .logotype {
   width: 120px;
   height: auto;

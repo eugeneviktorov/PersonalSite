@@ -83,7 +83,7 @@
 .confidentiality {
   font-size: 14px;
   color: var(--color-dark-main);
-  -webkit-tap-highlight-color: initial;
+  -webkit-tap-highlight-color: transparent;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;

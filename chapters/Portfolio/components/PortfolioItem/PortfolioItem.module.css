@@ -41,7 +41,8 @@
 }
 
 .title {
-  -webkit-tap-highlight-color: initial;
+  width: fit-content;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .description {

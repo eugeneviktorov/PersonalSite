@@ -7,7 +7,7 @@ import styles from "./Logotype.module.css";
 
 export default function Logotype({ className }: { className?: string }) {
   return (
-    <Link href="/">
+    <Link href="/" className={styles.container}>
       <Image
         src={LogotypeImage}
         alt="Logotype"

@@ -10,7 +10,7 @@
 
 .name,
 .contact {
-  -webkit-tap-highlight-color: initial;
+  -webkit-tap-highlight-color: transparent;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
